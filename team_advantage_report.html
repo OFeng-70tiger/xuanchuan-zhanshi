@@ -30,9 +30,15 @@ header .sub b{color:#FBE7B7;font-weight:normal}
 header .stamp{display:inline-block;margin-top:7px;border:1px solid rgba(251,239,216,.55);
   border-radius:20px;padding:1px 13px;font-size:11.5px;letter-spacing:2px;position:relative}
 
-h2{font-size:19px;color:var(--red2);margin:26px 0 14px;line-height:1.4;
-  padding-left:13px;border-left:5px solid var(--gold);font-weight:bold}
-h2 span{font-size:12.5px;color:var(--gold2);letter-spacing:2px;margin-left:10px;font-weight:normal}
+h2{font-size:22px;color:var(--red2);margin:34px 0 16px;line-height:1.45;
+  padding:11px 18px 11px 22px;font-weight:bold;
+  background:linear-gradient(180deg,#DDB35E,#A8813B) left/6px 100% no-repeat,
+             linear-gradient(90deg,#FAF1DC,#FFFCF4 62%,rgba(255,252,244,0));
+  border-radius:0 10px 10px 0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),
+             0 2px 5px rgba(168,129,59,.25),
+             0 6px 16px rgba(168,129,59,.14)}
+h2 span{font-size:13.5px;color:var(--gold2);letter-spacing:2px;margin-left:10px;font-weight:normal}
 
 /* 板块分界符 */
 .sep{display:flex;align-items:center;gap:14px;margin:34px 0 0;color:var(--gold);
@@ -63,11 +69,15 @@ a{color:var(--blue);text-decoration:none;word-break:break-all}
 .g4{grid-template-columns:repeat(4,1fr)}
 .g3{grid-template-columns:repeat(3,1fr)}
 .g2{grid-template-columns:repeat(2,1fr)}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;
-  padding:16px 12px;text-align:center}
-.stat .n{font-size:26px;color:var(--red);font-weight:bold;line-height:1.25;letter-spacing:-.5px}
-.stat .n small{font-size:14px;font-weight:normal;color:var(--red2)}
-.stat .t{font-size:12.5px;color:var(--muted);margin-top:6px;letter-spacing:.5px}
+.stat{background:linear-gradient(160deg,#7A2230,#5A1622 55%,#47101B);border:1px solid rgba(221,179,94,.55);
+  border-radius:10px;box-shadow:0 3px 9px rgba(90,22,34,.32), inset 0 1px 0 rgba(255,225,170,.22);
+  padding:16px 12px;text-align:center;position:relative;overflow:hidden}
+.stat::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(115deg,rgba(255,230,175,.13) 0%,transparent 34%)}
+.stat .n{font-size:34px;color:#F2D48C;font-weight:bold;line-height:1.2;letter-spacing:-.5px;
+  text-shadow:0 0 9px rgba(246,208,124,.55),0 0 22px rgba(246,208,124,.28)}
+.stat .n small{font-size:16px;font-weight:normal;color:#E5BE72;text-shadow:0 0 7px rgba(246,208,124,.4)}
+.stat .t{font-size:12.5px;color:#EBD5A6;margin-top:7px;letter-spacing:.5px}
 
 /* 卡片盒 */
 .box{background:var(--card);border:1px solid var(--line);border-radius:10px;
@@ -195,6 +205,8 @@ h2{scroll-margin-top:64px}
   box-shadow:0 3px 9px rgba(15,98,200,.3)}
 .m5.c5 .ava{background:linear-gradient(135deg,#B25A2B,#8E4018);
   box-shadow:0 3px 9px rgba(178,90,43,.3)}
+.m5.c6 .ava{background:linear-gradient(135deg,#6E4C9E,#4A2F73);
+  box-shadow:0 3px 9px rgba(110,76,158,.3)}
 .m5 .who{grid-column:2}
 .m5 .nm{font-size:17px;font-weight:bold;color:var(--red2);letter-spacing:1px;font-weight:bold}
 .m5 .rl{font-size:12.5px;color:var(--gold2);letter-spacing:.5px;margin-top:2px}
@@ -240,9 +252,9 @@ h2{scroll-margin-top:64px}
   .roles,.people{grid-template-columns:1fr 1fr!important}
   .p5{page-break-inside:auto}
   .sep{page-break-after:avoid}
-  .stat{padding:6px 6px}
-  .stat .n{font-size:21px}
-  .stat .t{font-size:11px;margin-top:3px}
+  .stat{padding:8px 6px}
+  .stat .n{font-size:25px}
+  .stat .t{font-size:11px;margin-top:4px}
   .grid{margin:8px 0}
   /* 页脚收紧，避免落款孤行拖出一页 */
   footer{margin-top:26px;padding-top:14px}
@@ -319,30 +331,35 @@ h2{scroll-margin-top:64px}
 <h2 id="sec2">贰 · 核心人员 <span>OUR PEOPLE</span></h2>
 
 <div class="box gold">
-  <h4>五人核心团队 ｜ 苏州和平国际旅行社 <span style="color:#B8252A">❤</span> 吴地时光机文史工作室</h4>
+  <h4>六人核心团队 ｜ 苏州和平国际旅行社 <span style="color:#B8252A">❤</span> 吴地时光机文史工作室</h4>
   <div class="p5">
     <div class="m5">
       <div class="ava">1</div>
       <div class="who"><div class="nm">李 艳</div><div class="rl">项目主要负责人</div></div>
-      <div class="ds"><b>主要负责：</b>项目统筹与运营管理，文旅项目营销推广、线上线下渠道整合与大型活动组织协调。<span class="exp"><b>经验与特长：</b>深耕旅游事业 20 余年，先后涉足传统旅游、旅行社运营、新媒体自媒体、互联网票务平台建设等领域；在抖音端数字化营销及景区类目的地运营上有丰富实战经验；善于团结团队成员、以业务结果为目标导向，拥有良好的行业人脉、旅游市场资源及异业渠道资源。</span></div>
+      <div class="ds"><b>主要负责：</b>项目统筹与运营管理，文旅项目营销推广、景区与目的地项目运营、线上线下渠道整合与大型活动组织协调。<span class="exp"><b>经验与特长：</b>深耕旅游事业 20 余年，历任苏州中国青年旅行社国内中心副总经理、江苏苏汽集团（苏州旅游集散中心）副总经理、江苏水韵文旅产品研发部总经理，现任苏州和平国际旅行社产品中心总监；曾作为上海世博会苏州代理之一累计输送游客数十万人次，主导省级数字旅游卡项目的模式复制与跨省推广；在抖音端数字化营销、景区类目的地运营与大型活动组织协调上经验丰富，行业人脉、旅游市场资源及异业渠道资源齐备。</span></div>
     </div>
     <div class="m5 hi">
       <div class="ava">2</div>
       <div class="who"><div class="nm">封子老师（封峰）</div><div class="rl">主讲人 · 课程与研学研发</div></div>
       <div class="ds"><b>主要负责：</b>承担吴地时光机文史工作室的课程与研学研发——文史内容原创、讲稿撰写、影像资料考证与数字化呈现；担任研学线路研发主要负责人（主题设定、史实考据、点位取舍）与旅行研学主讲人（现场主讲带教，户外课堂即兴传授手机摄影技巧）。<span class="exp"><b>经验与特长：</b>姑苏区老年大学特聘文史讲师、苏州本土文旅内容创作者，长期深耕苏州本地历史文化的研究与传播，全网文旅短视频粉丝 8 万余人；擅长以老照片、古画、老地图等影像资料还原姑苏千年风貌，讲解生动风趣、通俗易懂，贴近中老年受众的认知习惯。</span></div>
     </div>
-    <div class="m5 c3">
+    <div class="m5 c6">
       <div class="ava">3</div>
+      <div class="who"><div class="nm">朱 欢</div><div class="rl">门店加盟与统筹运营负责人</div></div>
+      <div class="ds"><b>主要负责：</b>负责旅行社门店加盟体系的搭建与统筹运营——加盟政策与准入标准制定、门店选址评估与开业辅导、店务规范与服务质量巡检、总部与门店之间的产品及客源联动，以及门店团队的培训、督导与业绩管理。<span class="exp"><b>经验与特长：</b>深耕旅行社门店零售与连锁加盟领域 10 年以上，曾在区域连锁旅行社总部负责门店发展条线，完整经历并主导过加盟网络的扩张与标准化运营：建立从加盟商招募、签约、培训、督导到考核的闭环管理流程，编制门店运营手册与服务标准，推动各门店在统一品牌、统一产品、统一价格、统一服务口径下稳定经营；擅长把总部的产品与内容能力转化为门店可执行的销售动作，通过社群维护、活动引流与老客转介提升单店坪效与复购。</span></div>
+    </div>
+    <div class="m5 c3">
+      <div class="ava">4</div>
       <div class="who"><div class="nm">王 琳</div><div class="rl">产品经理</div></div>
       <div class="ds"><b>主要负责：</b>旅行社日常业务运作与 OP 团队管理。<span class="exp"><b>经验与特长：</b>具备成熟的产品整合与资源调配能力，能够独立完成从市场调研、产品定位、成本核算到落地执行的全流程闭环。</span></div>
     </div>
     <div class="m5 c4">
-      <div class="ava">4</div>
+      <div class="ava">5</div>
       <div class="who"><div class="nm">周汉文</div><div class="rl">运营经理</div></div>
       <div class="ds"><b>主要负责：</b>活动项目策划与执行落地、市场推广活动运营。<span class="exp"><b>经验与特长：</b>多次成功策划运营市场推广活动；熟练运用 AI 工具辅助产品设计与运营分析，提升策划效率与内容产出质量，契合康养文旅产品创新与数字化运营的发展需求。</span></div>
     </div>
     <div class="m5 c5">
-      <div class="ava">5</div>
+      <div class="ava">6</div>
       <div class="who"><div class="nm">刘 昊</div><div class="rl">业务经理</div></div>
       <div class="ds"><b>主要负责：</b>旅行社业务拓展与产品线路开发，OTA 平台对接与地接资源整合。<span class="exp"><b>经验与特长：</b>深耕旅游行业十余年，具备旅行社产品经理全链条实战经验；曾主导对接携程、同程、美团等主流 OTA 平台并搭建线上自营渠道，运营「苏州旅游集散中心」实现私域流量自建，单项目创利超 50 万元；熟悉 B2B 分销体系与景区资源整合，擅长将碎片化地接资源打包为差异化产品线路。</span></div>
     </div>
@@ -362,35 +379,41 @@ h2{scroll-margin-top:64px}
 <div class="sep">✦ ✦ ✦</div>
 
 <h2 id="sec3">叁 · 核心业务能力 <span>CORE CAPABILITIES</span></h2>
-<p>支撑上述产品落地的，是五项已经跑通、可以复用的实际能力——这也是我们与常规旅行社、常规老年游最根本的区别所在。</p>
+<p>支撑上述产品落地的，是六项已经跑通、可以复用的实际能力——这也是我们与常规旅行社、常规老年游最根本的区别所在。</p>
 
 <div class="cap">
-  <div class="hd"><span class="no">能 力 一</span><span class="nm">文史内容原创与考证能力</span></div>
+  <div class="hd"><span class="no">能 力 一</span><span class="nm">旅行社经营与渠道分销能力</span></div>
+  <p>核心成员深耕旅游行业 20 余年，历任苏州中国青年旅行社国内中心副总经理、江苏苏汽集团（苏州旅游集散中心、苏州红枫旅行社）副总经理、江苏省水韵文旅产品研发部总经理，现任苏州和平国际旅行社产品中心总监；业务覆盖组团、地接、散客批发、旅游集散中心与数字化票务平台全链条，熟悉景区合作与 B2B 分销体系。</p>
+  <span class="tag">20 余年旅行社经营管理与团队带教</span>
+  <span class="tag">散客批发业务从零搭建，成为各景区来苏合作的常选对象</span>
+  <span class="tag">曾任上海世博会苏州代理之一，累计输送游客数十万人次</span>
+  <span class="tag">省级数字旅游卡模式复制推广至全国多个省份</span>
+  <span class="tag">现任苏州和平国际旅行社产品中心总监</span>
+</div>
+<div class="cap">
+  <div class="hd"><span class="no">能 力 二</span><span class="nm">特色研学线路与常规线路策划与实地勘路能力</span></div>
+  <p>每条线路都经过实地踩点：步行总里程、路面状况、落座歇脚点、卫生间分布、长椅与茶歇、树荫与日晒、长者票务政策，逐项核过再定稿。线路按行走强度分级，腿脚一般的学员也能全程跟下来。</p>
+  <span class="tag">步行可控 · 强度分级</span>
+  <span class="tag">60–69 岁半价、70 岁以上免票政策逐线核实</span>
+  <span class="tag">六条线路均配齐手册 · 图库 · 打卡页</span>
+</div>
+<div class="cap">
+  <div class="hd"><span class="no">能 力 三</span><span class="nm">文史内容原创与考证能力</span></div>
   <p>所有讲稿均为原创撰写，逐条查证史志与文献；对流传甚广的讹误（如地名混淆、年代错位、建筑数据失真）逐项勘误并形成内部口径，确保讲出去的每一句话都经得起追问。</p>
   <span class="tag">《姑苏繁华图》46 打卡点古今对照（交互页已上线）</span>
   <span class="tag">「连中三元」科举晋级课：童生到状元六级闯关 · 唱保制度</span>
   <span class="tag">四塔守望图鉴：史沿／高度／塔刹逐塔核证</span>
   <span class="tag">真珠舍利宝幢国宝课：造幢年代 · 四万余颗珍珠逐项考订</span>
 </div>
-
 <div class="cap">
-  <div class="hd"><span class="no">能 力 二</span><span class="nm">数字化产品开发能力</span></div>
+  <div class="hd"><span class="no">能 力 四</span><span class="nm">数字化产品开发能力</span></div>
   <p>能把一次课程、一条线路沉淀为可反复使用的数字资产：交互式网页、图鉴系统、打卡进度、古今对照页面、课件三件套（网页课件＋引导 PPT＋逐字讲稿）。学员可以带回家继续看，机构也可以直接拿去用。</p>
   <span class="tag">已交付 60+ 个交互页面与图鉴</span>
   <span class="tag">课件三件套已成标准交付物</span>
   <span class="tag">自有公众号 · 视频号传播渠道</span>
 </div>
-
 <div class="cap">
-  <div class="hd"><span class="no">能 力 三</span><span class="nm">线路策划与实地勘路能力</span></div>
-  <p>每条线路都经过实地踩点：步行总里程、路面状况、落座歇脚点、卫生间分布、长椅与茶歇、树荫与日晒、长者票务政策，逐项核过再定稿。线路按行走强度分级，腿脚一般的学员也能全程跟下来。</p>
-  <span class="tag">步行可控 · 强度分级</span>
-  <span class="tag">60–69 岁半价、70 岁以上免票政策逐线核实</span>
-  <span class="tag">六条线路均配齐手册 · 图库 · 打卡页</span>
-</div>
-
-<div class="cap">
-  <div class="hd"><span class="no">能 力 四</span><span class="nm">影像拍摄与内容传播能力</span></div>
+  <div class="hd"><span class="no">能 力 五</span><span class="nm">影像拍摄与内容传播能力</span></div>
   <p>自带摄影摄像与短视频制作能力，活动现场即出素材；同时拥有成体系的短视频栏目与公众号矩阵，可为合作方的活动、课程、线路做持续曝光，把一次线下活动放大成一轮线上传播。</p>
   <span class="tag">活动跟拍 · 短视频成片</span>
   <span class="tag">8 万+ 粉丝传播渠道</span>
@@ -399,13 +422,13 @@ h2{scroll-margin-top:64px}
   <span class="tag">自创栏目：《吴地名侦探》</span>
   <span class="tag">自创栏目：《姑苏繁华图》逐段解读</span>
 </div>
-
 <div class="cap">
-  <div class="hd"><span class="no">能 力 五</span><span class="nm">长者服务与安全保障能力</span></div>
-  <p>五星级旅行社的资质与保险体系做底，加上一年多校园服务的实际经验，形成了一套针对老年学员的服务规范：行程节奏放慢、预留休息与如厕节点、餐饮软烂、随队药箱、紧急联系人机制。</p>
-  <span class="tag">五星社资质 · 责任险体系</span>
-  <span class="tag">校园服务经验一年多</span>
-  <span class="tag">社区公益课堂常态化</span>
+  <div class="hd"><span class="no">能 力 六</span><span class="nm">景区运营与数字票务营销能力</span></div>
+  <p>具备景区类目的地运营的实战经验：抖音端以「精准种草＋达人矩阵＋流量裂变」模型联动达人创作、阶梯式投放，保障曝光并提升门票预售转化；OTA 端以「线上预售＋场景化套餐」结合携程、美团等平台流量扶持政策，搭建从景点导览到餐饮住宿的消费闭环；可承接景区樱花季一类的全案托管，含营销活动、线上线下票务、营地运营与落地接待。</p>
+  <span class="tag">景区全案托管（苏州樱野樱花季等）</span>
+  <span class="tag">抖音服务商托管 · 达人矩阵与阶梯式投放</span>
+  <span class="tag">OTA 线上预售＋场景化套餐 · 消费闭环</span>
+  <span class="tag">文旅 S2B2C 模式实践</span>
 </div>
 
 <div class="sep">✦ ✦ ✦</div>
@@ -616,6 +639,34 @@ h2{scroll-margin-top:64px}
 <div class="sep">✦ ✦ ✦</div>
 
 <h2 id="sec7">柒 · 已落地活动实绩 <span>TRACK RECORD</span></h2>
+<p>本章分两部分呈现：先看核心成员在其它平台主导的往期实战实绩，再看吴地时光机品牌自身的活动推进实绩。</p>
+
+<h3>往期实战实绩 · 核心成员主导（近十年）</h3>
+<p class="muted">以下为核心成员加入本团队之前，在其它平台主导的实操项目，用于佐证我们可承接的业务量级。</p>
+
+<table>
+  <thead>
+    <tr><th style="width:17%">时间</th><th style="width:31%">项目</th><th>形式与说明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>2010–2020</b></td><td>上海世博会票务代理（苏州区域）</td><td>作为苏州代理之一组织输送游客数十万人次，社会效益与经济效益兼得</td></tr>
+    <tr><td><b>2010–2020</b></td><td>苏州华谊影城渠道合作</td><td>开业当年即在各渠道中送客量居前，合作延续至今，每年持续输送客源</td></tr>
+    <tr><td><b>2020–2022</b></td><td>「再青春」细分市场品牌</td><td>依托全国前列 B2B 平台从零开拓细分市场业务板块，形成稳定口碑</td></tr>
+    <tr><td><b>2023–2025</b></td><td>江苏水韵数字旅游卡</td><td>省级一卡通项目，模式复制推广至全国多个省份，为多省相关业务提供支持</td></tr>
+    <tr><td><b>2025 至今</b></td><td>木渎景区与木渎酒店运营</td><td>线下渠道与线上平台同步运营，已纳入当前团队业务</td></tr>
+    <tr><td><b>景区合作</b></td><td>苏州红豆山庄水世界 · 樱野景区 · 甪呦呦成长社区</td><td>覆盖三类景区实操：红豆山庄开业当年暑期合作，自投资金与人员打造水上项目，为景区同步打响品牌；樱野樱花季全案托管（抖音服务商托管运营、营销活动、线上线下票务、营地运营、落地接待）；甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
+  </tbody>
+</table>
+
+<div class="box wash">
+  <ul>
+    <li>我们不只会做内容，也真正做过「<b>把人带来</b>」的渠道、票务与目的地运营</li>
+    <li>具备<b>十万人次级</b>大型活动的组织与客流输送经验，量与流程都跑得动</li>
+    <li>从景区内容、票务营销到落地接待可<b>全案承接</b>，合作方的景区 / 目的地项目可直接复用</li>
+  </ul>
+</div>
+
+<h3>吴地时光机研学项目推进实绩</h3>
 <p>以下是我们<b>已经实际交付过</b>的活动——不是方案构想，而是跑通过的形式，可原样复制到贵方的场景中。</p>
 
 <table>
@@ -633,7 +684,6 @@ h2{scroll-margin-top:64px}
 </table>
 
 <div class="box wash">
-  <h4>这些实绩说明什么</h4>
   <ul>
     <li>已跑通「<b>进老年大学、进社区、进为老服务中心</b>」三条落地路径，同时另有面向亲子家庭的产品线，客群可切换</li>
     <li>每一场活动都不止「讲一次就散」，而是沉淀为手册、图库、网页与影像，<b>下一场可以做得更快、更好</b></li>
