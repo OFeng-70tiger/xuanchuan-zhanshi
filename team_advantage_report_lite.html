@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吴地时光机趣味文史文旅研学团队 · 团队优势汇报</title>
+<style>
+:root{
+  --ink:#2B2118; --ink2:#5C4A30; --muted:#8A7550;
+  --red:#B8252A; --red2:#8E2A22; --gold:#C9A45C; --gold2:#A8813B;
+  --paper:#FCFAF6; --card:#FFFFFF; --line:#E7D7B5; --wash:#FAF5EA;
+  --blue:#0F62C8; --green:#2F7D5B;
+}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Microsoft YaHei","微软雅黑",-apple-system,sans-serif;
+  font-size:15px;line-height:1.78;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px 80px}
+
+/* 页头 */
+header{background:linear-gradient(160deg,#8E2A22,#B8252A 55%,#A01E23);color:#FBEFD8;
+  padding:17px 22px 15px;text-align:center;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 20% 0%,rgba(255,235,190,.16),transparent 55%)}
+header h1{font-size:24px;margin:6px 0 5px;font-weight:normal;letter-spacing:1px;
+  line-height:1.3;position:relative}
+header h1 em{font-style:normal;color:#FBE7B7}
+header .sub{font-size:12.5px;color:#EFD9B4;position:relative;line-height:1.7}
+header .sub b{color:#FBE7B7;font-weight:normal}
+header .stamp{display:inline-block;margin-top:7px;border:1px solid rgba(251,239,216,.55);
+  border-radius:20px;padding:1px 13px;font-size:11.5px;letter-spacing:2px;position:relative}
+
+h2{font-size:19px;color:var(--red2);margin:26px 0 14px;line-height:1.4;
+  padding-left:13px;border-left:5px solid var(--gold);font-weight:bold}
+h2 span{font-size:12.5px;color:var(--gold2);letter-spacing:2px;margin-left:10px;font-weight:normal}
+
+/* 板块分界符 */
+.sep{display:flex;align-items:center;gap:14px;margin:34px 0 0;color:var(--gold);
+  font-size:12px;letter-spacing:10px;text-indent:10px;user-select:none}
+.sep::before,.sep::after{content:"";flex:1;height:1px}
+.sep::before{background:linear-gradient(to right,transparent,#E0CEA4)}
+.sep::after{background:linear-gradient(to left,transparent,#E0CEA4)}
+h3{font-size:16px;color:#6B4B1E;margin:24px 0 8px;font-weight:bold}
+h4{font-size:14.5px;color:var(--red2);margin:16px 0 6px;font-weight:bold}
+p{margin:8px 0}
+ul,ol{margin:8px 0;padding-left:22px}
+li{margin:5px 0}
+b{color:#1F1810}
+a{color:var(--blue);text-decoration:none;word-break:break-all}
+.muted{color:var(--muted)}
+
+/* 结论条 */
+.verdict{background:linear-gradient(135deg,#FFF6E2,#FBEFD8);border:1px solid var(--gold);
+  border-left:5px solid var(--red);border-radius:10px;padding:14px 18px;margin:20px 0 0}
+.verdict .hd{font-size:11.5px;letter-spacing:3px;color:var(--gold2);margin-bottom:5px;font-weight:normal}
+.verdict p{margin:5px 0;font-size:14px;line-height:1.72}
+.verdict .big{font-size:15px;color:var(--red2);font-weight:normal;line-height:1.68}
+.verdict b{font-weight:normal;color:#8E2A22}
+
+/* 数据卡 */
+.grid{display:grid;gap:12px;margin:16px 0}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:16px 12px;text-align:center}
+.stat .n{font-size:26px;color:var(--red);font-weight:bold;line-height:1.25;letter-spacing:-.5px}
+.stat .n small{font-size:14px;font-weight:normal;color:var(--red2)}
+.stat .t{font-size:12.5px;color:var(--muted);margin-top:6px;letter-spacing:.5px}
+
+/* 卡片盒 */
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:18px 22px;margin:14px 0}
+.box.wash{background:var(--wash)}
+.box.gold{border-color:var(--gold);background:linear-gradient(135deg,#FFFBF2,#FDF6E8)}
+.box h4{margin-top:0}
+.box ul{margin:6px 0 0}
+
+/* 双引擎 */
+.engine{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.eng{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;position:relative;overflow:hidden}
+.eng::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
+.eng.b::before{background:var(--gold)}
+.eng .lbl{font-size:11.5px;letter-spacing:3px;color:var(--gold2)}
+.eng .nm{font-size:18px;color:var(--red2);font-weight:bold;margin:6px 0 4px}
+.eng .rl{font-size:12.5px;color:var(--muted);letter-spacing:.5px}
+.eng p{font-size:14px;color:var(--ink2);margin:9px 0 0;line-height:1.72}
+
+/* 能力条 */
+.cap{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);
+  border-radius:10px;padding:16px 20px;margin:11px 0}
+.cap .hd{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.cap .no{font-size:12px;letter-spacing:2px;color:#fff;background:var(--red);
+  border-radius:4px;padding:1px 8px}
+.cap .nm{font-size:16px;font-weight:bold;color:var(--red2)}
+.cap p{font-size:14px;color:var(--ink2);margin:8px 0 0}
+.cap .tag{display:inline-block;font-size:12px;color:var(--gold2);background:#FBF4E4;
+  border:1px solid #EEDFBE;border-radius:12px;padding:1px 10px;margin:8px 6px 0 0}
+
+/* 双重身份 */
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:13px 0 0}
+.role{background:#FFFCF5;border:1px solid #EEDFBE;border-radius:10px;padding:13px 16px}
+.role .k{font-size:11.5px;letter-spacing:2px;color:var(--gold2)}
+.role .v{font-size:15.5px;font-weight:bold;color:var(--red2);margin-top:5px}
+.role .d{font-size:12.5px;color:var(--ink2);margin-top:5px;line-height:1.66}
+
+/* 人员名单 */
+.people{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0 0}
+.pp{background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px 16px;
+  display:flex;gap:12px;align-items:flex-start}
+.pp .idx{flex:0 0 28px;height:28px;border-radius:50%;background:#F2E4C6;color:var(--gold2);
+  display:flex;align-items:center;justify-content:center;font-size:13.5px;font-weight:bold}
+.pp .nm{font-size:15.5px;font-weight:bold;color:var(--red2);letter-spacing:1px}
+.pp .rl{font-size:13px;color:var(--ink2);margin-top:3px;line-height:1.6}
+.pp.tbd{background:#FBF8F1;border-style:dashed;border-color:#E2D5B8}
+.pp.tbd .idx{background:#F0EADB;color:#BCAC88}
+.pp.tbd .nm{color:#A99B7E;font-weight:normal}
+.pp .ds{font-size:12.5px;color:var(--ink2);margin-top:7px;line-height:1.68;border-top:1px dashed #EADFC8;padding-top:7px}
+
+/* 表格 */
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;
+  background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th{background:#F6EDDA;color:#6B4B1E;font-weight:bold;text-align:left;
+  padding:10px 12px;border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.5px}
+td{padding:10px 12px;border-bottom:1px solid #F1E8D6;vertical-align:top;line-height:1.68}
+tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#FDFBF6}
+td.c,th.c{text-align:center}
+
+/* 对比表 */
+.vs th{background:#8E2A22;color:#FBEFD8}
+.vs th:nth-child(2){background:#6E6257}
+.vs td:nth-child(1){color:var(--muted);width:22%}
+.vs td:nth-child(3){background:#FFFAF0;color:#4A2A18}
+.vs td:nth-child(3) b{color:var(--red2)}
+
+/* 三步走 */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:16px 0}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:18px 20px;position:relative}
+.step.now{border-color:var(--gold);box-shadow:0 3px 14px rgba(201,164,92,.18)}
+.step .ph{font-size:11.5px;letter-spacing:2px;color:#fff;background:var(--gold2);
+  border-radius:4px;padding:2px 9px;display:inline-block}
+.step.now .ph{background:var(--red)}
+.step .nm{font-size:16px;font-weight:bold;color:var(--red2);margin:10px 0 6px}
+.step .tm{font-size:12px;color:var(--muted);letter-spacing:.5px}
+.step ul{margin:10px 0 0;padding-left:18px}
+.step li{font-size:13px;color:var(--ink2);line-height:1.7;margin:4px 0}
+
+/* 页脚 */
+footer{margin-top:52px;border-top:2px solid var(--line);padding-top:22px;
+  font-size:13px;color:var(--muted);line-height:1.95}
+footer b{color:var(--ink2)}
+.sign{margin-top:26px;text-align:right;font-size:14px;color:var(--ink2);line-height:2}
+.sign .big{font-size:16px;color:var(--red2);font-weight:bold}
+
+@media screen and (max-width:760px){
+  .g5,.g4,.g3,.g2,.engine,.steps,.people,.roles{grid-template-columns:1fr 1fr}
+  .g5{grid-template-columns:repeat(2,1fr)}
+  header h1{font-size:24px}
+}
+/* 置顶导航 */
+html{scroll-behavior:smooth}
+nav.toc{position:sticky;top:0;z-index:99;background:rgba(252,250,246,.9);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);box-shadow:0 2px 12px rgba(140,100,40,.09)}
+nav.toc .bar{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:6px;
+  padding:8px 16px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav.toc .bar::-webkit-scrollbar{display:none}
+nav.toc .brand{flex:0 0 auto;font-size:13px;font-weight:bold;color:var(--red2);letter-spacing:1px;
+  padding-right:11px;border-right:1px solid var(--line);margin-right:3px;white-space:nowrap}
+nav.toc a{flex:0 0 auto;font-size:12.5px;color:var(--ink2);padding:3.5px 11px;border-radius:999px;
+  border:1px solid transparent;white-space:nowrap;word-break:normal;transition:all .18s ease}
+nav.toc a:hover{color:var(--red);border-color:#E2C88F;background:#FFF9EC}
+nav.toc a.on{color:#FBEFD8;background:linear-gradient(135deg,#8E2A22,#B8252A);
+  border-color:transparent;box-shadow:0 2px 7px rgba(184,37,42,.32)}
+h2{scroll-margin-top:64px}
+
+/* 5 人核心团队竖排 */
+.p5{margin-top:4px}
+.m5{display:grid;grid-template-columns:46px 1fr;gap:4px 16px;padding:17px 4px;
+  border-top:1px dashed #E4D4B0}
+.m5:first-child{border-top:none}
+.m5 .ava{grid-row:1/3;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,#B8252A,#8E2A22);color:#FBEFD8;
+  font-size:18px;font-weight:bold;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 3px 9px rgba(142,42,34,.28)}
+.m5.hi .ava{background:linear-gradient(135deg,#C9A45C,#A8813B);
+  box-shadow:0 3px 9px rgba(168,129,59,.32)}
+.m5.c3 .ava{background:linear-gradient(135deg,#2F7D5B,#1F5C40);
+  box-shadow:0 3px 9px rgba(47,125,91,.3)}
+.m5.c4 .ava{background:linear-gradient(135deg,#0F62C8,#0A4690);
+  box-shadow:0 3px 9px rgba(15,98,200,.3)}
+.m5.c5 .ava{background:linear-gradient(135deg,#B25A2B,#8E4018);
+  box-shadow:0 3px 9px rgba(178,90,43,.3)}
+.m5 .who{grid-column:2}
+.m5 .nm{font-size:17px;font-weight:bold;color:var(--red2);letter-spacing:1px;font-weight:bold}
+.m5 .rl{font-size:12.5px;color:var(--gold2);letter-spacing:.5px;margin-top:2px}
+.m5 .ds{grid-column:2;font-size:13px;color:var(--ink2);line-height:1.74;margin-top:5px}
+.m5 .ds .exp{display:block;margin-top:6px}
+.m5 .tags{grid-column:2;display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.m5 .tags span{font-size:11.5px;color:var(--red2);border:1px solid #E7CFA0;
+  background:#FFFBF0;border-radius:999px;padding:2.5px 11px;letter-spacing:.5px}
+
+
+/* 折叠导航按键（仅线上版） */
+.jumpwrap{text-align:center;margin:18px 0 6px}
+.jump{display:inline-block;cursor:pointer;text-decoration:none;color:#FBEFD8;
+  background:linear-gradient(135deg,#B8252A,#8E2A22);
+  border:1px solid #A8813B;border-radius:22px;padding:9px 24px;
+  font-size:14px;letter-spacing:1px;box-shadow:0 4px 12px rgba(142,42,34,.26);
+  transition:all .18s ease;user-select:none}
+.jump:hover{transform:translateY(-1px);box-shadow:0 7px 17px rgba(142,42,34,.34)}
+/* 分色：产品展示=红，线路展示=蓝 */
+.jump.blue{background:linear-gradient(135deg,#1B6FC4,#0E4A8C);border-color:#3A82BE;
+  box-shadow:0 4px 12px rgba(14,74,140,.26)}
+.jump.blue:hover{box-shadow:0 7px 17px rgba(14,74,140,.34)}
+/* 折叠区末尾的「收起」按键：上方虚线收口，明确宣示本段内容到此结束 */
+.jumpwrap.closewrap{margin:24px 0 2px;border-top:1px dashed #E4D4B0;padding-top:16px}
+.jump.close{letter-spacing:1.5px}
+.jump.close .ic{margin-left:0;margin-right:7px;color:#FFE7C2}
+.jump.close.open .ic{transform:none}
+.jump .ic{display:inline-block;margin-left:7px;transition:transform .2s ease}
+.jump.open .ic{transform:rotate(180deg)}
+.jumpnote{display:none}
+.fold{margin:20px 0 4px}
+.fold[hidden]{display:none}
+.star{color:#C9821E}
+.starnote{font-size:13px;color:#7E6534;background:#FBF5E8;border-left:4px solid #D9BE7E;
+  border-radius:6px;padding:9px 13px;margin:14px 0 6px;line-height:1.7}
+#routes,#prod{scroll-margin-top:70px}
+/* 文末附件指引（打印版专用） */
+.seeref{font-size:12.5px;color:#8A6B33;background:#FBF5E8;border:1px dashed #E0CDA2;
+  border-radius:8px;padding:8px 13px;margin:12px 0 4px;line-height:1.7}
+.seeref a{color:var(--red2)}
+.seeref .ar{color:var(--gold2);margin-right:4px}
+.seeref b{color:var(--red2);font-weight:normal}
+
+/* ===== 捌 · 合作方向（卡片版式） ===== */
+.coop{position:relative;margin:16px 0 0;border:1px solid #EBDCBC;border-radius:16px;
+  background:linear-gradient(155deg,#FFFDF7 0%,#FBF5E7 58%,#F8F0DD 100%);
+  padding:22px 22px 20px;overflow:hidden}
+.coop::before{content:"捌";position:absolute;right:16px;top:-22px;font-size:124px;line-height:1;
+  color:rgba(184,37,42,.055);font-weight:bold;pointer-events:none;user-select:none}
+.coop::after{content:"";position:absolute;left:0;right:0;top:0;height:4px;
+  background:linear-gradient(90deg,#8E2A22,#C9A45C 48%,#B8252A)}
+.coop-lede{position:relative;font-size:13.5px;color:var(--ink2);margin:2px 0 16px;line-height:1.74}
+.coop-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.cc{position:relative;background:#fff;border:1px solid #EFE2C6;border-radius:12px;
+  padding:15px 16px 16px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.cc::before{content:"";position:absolute;left:16px;right:16px;top:-1px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,var(--c1),var(--c2));opacity:.9}
+.cc:hover{transform:translateY(-3px);border-color:#DFC894;
+  box-shadow:0 10px 22px rgba(140,100,40,.15)}
+.cc-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.cc-no{font-size:11.5px;font-weight:bold;letter-spacing:1px;color:#fff;border-radius:6px;
+  padding:2px 8px;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.cc-ic{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:#FBF4E4;border:1px solid #EEDFBE;color:var(--c2)}
+.cc-ic svg{width:19px;height:19px;display:block}
+.cc .en{font-size:10.5px;letter-spacing:1.8px;color:#B39A62}
+.cc h4{margin:3px 0 6px;font-size:15.5px;color:var(--red2);font-weight:bold}
+.cc p{font-size:12.8px;color:var(--ink2);line-height:1.72;margin:0}
+.coop-foot{margin-top:15px;border-radius:12px;padding:14px 18px;position:relative;
+  display:flex;gap:14px;align-items:center;color:#FBEFD8;
+  background:linear-gradient(120deg,#8E2A22,#B8252A 58%,#9C2A24)}
+.coop-foot .k{flex:0 0 auto;font-size:11px;letter-spacing:2.5px;color:#FBE7B7;
+  border:1px solid rgba(251,239,216,.5);border-radius:20px;padding:3px 11px}
+.coop-foot p{margin:0;font-size:13px;line-height:1.72;color:#F7E6C6}
+.coop-foot p b{color:#FBE7B7;font-weight:normal}
+
+/* ===== 文末附件（打印版 / PDF） ===== */
+.apx{margin-top:26px}
+.apx-band{display:flex;align-items:center;gap:12px;margin:0 0 8px}
+.apx-band::before,.apx-band::after{content:"";flex:1;height:2px}
+.apx-band::before{background:linear-gradient(90deg,transparent,#DCC79A)}
+.apx-band::after{background:linear-gradient(270deg,transparent,#DCC79A)}
+.apx-band span{font-size:12px;letter-spacing:5px;text-indent:5px;color:#FBEFD8;
+  background:linear-gradient(135deg,#8E2A22,#B8252A);border-radius:20px;padding:3px 16px}
+.apx-band em{font-style:normal;font-size:10.5px;letter-spacing:3px;color:var(--gold2)}
+.apx-item{margin-top:18px;border-top:1px dashed var(--line);padding-top:4px}
+.apx-hd{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap;margin:14px 0 8px;
+  background:linear-gradient(135deg,#FFF8EA,#FBF1DC);border:1px solid #EBD9AE;
+  border-left:5px solid var(--red);border-radius:10px;padding:10px 15px}
+.apx-no{font-size:12.5px;letter-spacing:1px;color:#fff;border-radius:6px;padding:2px 10px;
+  background:linear-gradient(135deg,#8E2A22,#B8252A)}
+.apx-tt{font-size:16.5px;font-weight:bold;color:var(--red2)}
+.apx-en{font-size:10.5px;letter-spacing:2px;color:#B39A62;margin-left:auto}
+.apx-item h4{font-size:14.5px;color:#6B4B1E;margin:16px 0 6px;font-weight:bold}
+.apx-item h4:first-of-type{margin-top:6px}
+.apx-item h5{font-size:13.5px;color:var(--red2);margin:14px 0 4px;font-weight:bold}
+.apx-item table{margin:8px 0}
+
+/* 合作方向：手机断点（须写在基础规则之后，否则被覆盖） */
+@media screen and (max-width:760px){
+  .coop{padding:16px 14px 15px}
+  .coop-grid{grid-template-columns:1fr 1fr}
+}
+@media screen and (max-width:520px){
+  .coop-grid{grid-template-columns:1fr}
+}
+
+@media print{
+  body{background:#fff}
+  .wrap{padding:0 6px 20px}
+  /* 红头进一步压缩 */
+  header{padding:9px 16px 8px}
+  header h1{font-size:19px;margin:2px 0 2px;line-height:1.24}
+  header .sub{font-size:10.5px;line-height:1.58}
+  header .stamp{margin-top:4px;padding:0 10px;font-size:10px;letter-spacing:1.5px}
+  /* 「关于我们」进一步压缩，取消加粗，压到最少行数 */
+  .verdict{padding:10px 13px;margin:12px 0 0}
+  .verdict .hd{font-size:10.5px;margin-bottom:2px}
+  .verdict p{margin:3px 0;font-size:12.5px;line-height:1.66}
+  .verdict .big{font-size:13px;line-height:1.62}
+  /* 双引擎卡片压缩，确保整块留在首页 */
+  .engine{margin:10px 0}
+  .eng{padding:13px 15px}
+  .eng .lbl{font-size:10.5px;letter-spacing:2.5px}
+  .eng .nm{font-size:16px;margin:4px 0 3px}
+  .eng .rl{font-size:11.5px}
+  .eng p{font-size:12.5px;margin:6px 0 0;line-height:1.66}
+  h2{page-break-after:avoid;margin:14px 0 8px}
+  .sep{margin:14px 0 0}
+  /* 允许内容块跨页切断，杜绝大块空白 */
+  .box,.cap,.step,.eng{page-break-inside:auto;margin:8px 0}
+  tr{page-break-inside:avoid}
+  thead{display:table-header-group}
+  nav.toc{display:none}
+  /* 数据卡等恢复桌面列数（手机断点已限 screen，双保险） */
+  .g5{grid-template-columns:repeat(5,1fr)!important}
+  .g4{grid-template-columns:repeat(4,1fr)!important}
+  .g3{grid-template-columns:repeat(3,1fr)!important}
+  .g2{grid-template-columns:repeat(2,1fr)!important}
+  .engine{grid-template-columns:1fr 1fr!important}
+  .roles,.people{grid-template-columns:1fr 1fr!important}
+  .p5{page-break-inside:auto}
+  .sep{page-break-after:avoid}
+  /* 折叠导航按键：打印时只留指引，不出现按钮 */
+  .jumpwrap.prodwrap,.jumpwrap.routewrap,.jumpwrap.closewrap{display:none!important}
+  /* 网页版直接打印的兜底：折叠区全部就地展开，内容不丢失（正式 PDF 用打印版文件出） */
+  .fold.prod,.fold.route{display:block!important}
+  /* 捌 · 合作方向压缩 */
+  .coop{padding:14px 16px 13px;margin:10px 0 0;page-break-inside:avoid}
+  .coop::before{font-size:88px;top:-14px}
+  .coop-lede{font-size:12.5px;margin:0 0 11px}
+  .coop-grid{gap:9px}
+  .cc{padding:11px 12px 12px}
+  .cc-hd{margin-bottom:6px}
+  .cc-ic{width:28px;height:28px}
+  .cc-ic svg{width:16px;height:16px}
+  .cc h4{font-size:13.8px;margin:2px 0 4px}
+  .cc p{font-size:11.6px;line-height:1.6}
+  .coop-foot{padding:10px 14px;margin-top:11px;gap:11px}
+  .coop-foot p{font-size:11.6px;line-height:1.62}
+  /* 文末附件：虚线分隔、连续排版，附件标题不跨页断开 */
+  .apx{margin-top:18px}
+  .apx-hd{page-break-inside:avoid;page-break-after:avoid;margin:10px 0 6px;padding:8px 12px}
+  .apx-tt{font-size:15.5px}
+  .apx-item h4,.apx-item h5{page-break-after:avoid}
+  .apx{page-break-before:always}
+  .seeref{font-size:11.5px;padding:6px 10px;margin:8px 0 4px}
+  .starnote{font-size:11.5px;padding:6px 9px;margin:8px 0 4px;line-height:1.6}
+  .stat{padding:6px 6px}
+  .stat .n{font-size:21px}
+  .stat .t{font-size:11px;margin-top:3px}
+  .grid{margin:8px 0}
+  /* 页脚收紧，避免落款孤行拖出一页 */
+  footer{margin-top:26px;padding-top:14px}
+  .sign{margin-top:14px;page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>吴地时光机 · 趣味文史<br><em>文旅研学团队</em></h1>
+  <div class="sub">
+    苏州和平国际旅行社&nbsp;<span style="color:#FBE7B7">❤</span>&nbsp;吴地时光机文史工作室<br>
+    <b>呈送：苏州康养集团（苏康养）审核参考</b>
+  </div>
+  <div class="stamp">文旅融合 · 文化养老 · 走读苏州</div>
+</header>
+
+<nav class="toc">
+  <div class="bar">
+    <div class="brand">吴地时光机</div>
+    <a href="#sec1" class="on">团队构成</a>
+    <a href="#sec2">核心人员</a>
+    <a href="#sec3">业务能力</a>
+    <a href="#sec4">服务与产品</a>
+    <a href="#sec5">落地实绩</a>
+    <a href="#sec6">差异化</a>
+    <a href="#sec7">发展规划</a>
+    <a href="#sec8">合作支持</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<div class="verdict">
+  <div class="hd">关 于 我 们</div>
+  <p class="big">我们是一支「<span style="color:#8E2A22">五星级旅行社的专业执行能力</span> ＋ <span style="color:#8E2A22">文史讲师的原创内容能力</span>」合体的老年文化研学团队——既能把队伍安全、舒服地带出去，也能让每一处地标都讲得出真东西、看得出门道。</p>
+  <p>现有 <b>15 讲系统课程</b>、<b>六条市内走读线路</b>（文庙/胥江胥门/阊门/北寺塔/山塘街/狮子山）、<b>六条跨市一日线</b>、<b>八类主题课件</b>，以及<b>公众号 · 视频号双端自媒体矩阵</b>，下一步将向长三角周边游、全国历史文化名城深度研学延伸。同时依托五星级旅行社的完整资质与成熟接待体系，常规大型旅行社所能承接的各类业务均可正常开展——从国内周边短线、跨省长线，直至世界性的旅行活动，均能与趣味文史研学活动深度结合、高品质交付，这正是我们与众不同的地方。</p>
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec1">壹 · 团队构成 <span>TWO ENGINES</span></h2>
+<p>我们的团队不是临时拼凑的「导游＋地接」，而是<b>内容引擎与执行引擎双轮驱动</b>的固定班底，两块能力互相咬合、彼此成就。</p>
+
+<div class="engine">
+  <div class="eng">
+    <div class="lbl">执 行 引 擎</div>
+    <div class="nm">苏州和平国际旅行社</div>
+    <div class="rl">苏州市两家五星级旅行社之一</div>
+    <p>负责团队出行的<b>组织、交通、安全、后勤与应急保障</b>。2025 年 9 月正式入驻姑苏区老年大学西校区，长期在校园内提供老年友好型文旅服务，熟悉老年群体的出行节奏与真实顾虑。</p>
+  </div>
+  <div class="eng b">
+    <div class="lbl">内 容 引 擎</div>
+    <div class="nm">吴地时光机文史工作室</div>
+    <div class="rl">文史内容原创与产品研发</div>
+    <p>负责课程与线路的<b>文史内容原创、讲稿撰写、影像资料考证与数字化呈现</b>。由苏州本土文史内容创作团队组成，擅长用老照片、古画、古地图把抽象的年代变成看得见、摸得着的画面。</p>
+  </div>
+</div>
+
+<div class="grid g5">
+  <div class="stat"><div class="n">5<small>星</small></div><div class="t">旅行社资质</div></div>
+  <div class="stat"><div class="n">8<small>万+</small></div><div class="t">全网文旅粉丝</div></div>
+  <div class="stat"><div class="n">15<small>讲</small></div><div class="t">系统课程</div></div>
+  <div class="stat"><div class="n">12<small>条</small></div><div class="t">成熟研学线路</div></div>
+  <div class="stat"><div class="n">60<small>+</small></div><div class="t">内容资产</div></div>
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec2">贰 · 核心人员 <span>OUR PEOPLE</span></h2>
+
+<div class="box gold">
+  <h4>五人核心团队 ｜ 苏州和平国际旅行社 <span style="color:#B8252A">❤</span> 吴地时光机文史工作室</h4>
+  <div class="p5">
+    <div class="m5">
+      <div class="ava">1</div>
+      <div class="who"><div class="nm">李 艳</div><div class="rl">项目主要负责人</div></div>
+      <div class="ds"><b>主要负责：</b>项目统筹与运营管理，文旅项目营销推广、线上线下渠道整合与大型活动组织协调。<span class="exp"><b>经验与特长：</b>深耕旅游事业 20 余年，先后涉足传统旅游、旅行社运营、新媒体自媒体、互联网票务平台建设等领域；在抖音端数字化营销及景区类目的地运营上有丰富实战经验；善于团结团队成员、以业务结果为目标导向，拥有良好的行业人脉、旅游市场资源及异业渠道资源。</span></div>
+    </div>
+    <div class="m5 hi">
+      <div class="ava">2</div>
+      <div class="who"><div class="nm">封子老师（封峰）</div><div class="rl">主讲人 · 课程与研学研发</div></div>
+      <div class="ds"><b>主要负责：</b>承担吴地时光机文史工作室的课程与研学研发——文史内容原创、讲稿撰写、影像资料考证与数字化呈现；担任研学线路研发主要负责人（主题设定、史实考据、点位取舍）与旅行研学主讲人（现场主讲带教，户外课堂即兴传授手机摄影技巧）。<span class="exp"><b>经验与特长：</b>姑苏区老年大学特聘文史讲师、苏州本土文旅内容创作者，长期深耕苏州本地历史文化的研究与传播，全网文旅短视频粉丝 8 万余人；擅长以老照片、古画、老地图等影像资料还原姑苏千年风貌，讲解生动风趣、通俗易懂，贴近中老年受众的认知习惯。</span></div>
+    </div>
+    <div class="m5 c3">
+      <div class="ava">3</div>
+      <div class="who"><div class="nm">王 琳</div><div class="rl">产品经理</div></div>
+      <div class="ds"><b>主要负责：</b>旅行社日常业务运作与 OP 团队管理。<span class="exp"><b>经验与特长：</b>具备成熟的产品整合与资源调配能力，能够独立完成从市场调研、产品定位、成本核算到落地执行的全流程闭环。</span></div>
+    </div>
+    <div class="m5 c4">
+      <div class="ava">4</div>
+      <div class="who"><div class="nm">周汉文</div><div class="rl">运营经理</div></div>
+      <div class="ds"><b>主要负责：</b>活动项目策划与执行落地、市场推广活动运营。<span class="exp"><b>经验与特长：</b>多次成功策划运营市场推广活动；熟练运用 AI 工具辅助产品设计与运营分析，提升策划效率与内容产出质量，契合康养文旅产品创新与数字化运营的发展需求。</span></div>
+    </div>
+    <div class="m5 c5">
+      <div class="ava">5</div>
+      <div class="who"><div class="nm">刘 昊</div><div class="rl">业务经理</div></div>
+      <div class="ds"><b>主要负责：</b>旅行社业务拓展与产品线路开发，OTA 平台对接与地接资源整合。<span class="exp"><b>经验与特长：</b>深耕旅游行业十余年，具备旅行社产品经理全链条实战经验；曾主导对接携程、同程、美团等主流 OTA 平台并搭建线上自营渠道，运营「苏州旅游集散中心」实现私域流量自建，单项目创利超 50 万元；熟悉 B2B 分销体系与景区资源整合，擅长将碎片化地接资源打包为差异化产品线路。</span></div>
+    </div>
+  </div>
+  <!-- 随队服务保障（团队分工）板块暂时隐藏，保留后续恢复可能：
+  <p style="margin-top:18px"><b>随队服务保障（团队分工）：</b></p>
+  <ul>
+    <li><b>领队与讲解助理</b>，全程随队，负责节奏把控、点名清点、现场秩序与学员照应</li>
+    <li><b>专业摄影摄像</b>——为活动提供全程拍照与视频记录，学员当天就能拿到属于自己的影像作品</li>
+    <li><b>交通与后勤</b>，大巴调度、集合点管理、餐饮与落座点预订（提前要求软烂少油、避开忌口）</li>
+    <li><b>安全保障</b>，旅行社责任险体系、应急预案、随身常备药箱、行动不便学员一对一照护预案</li>
+  </ul>
+  <p class="muted" style="margin-top:10px">这支班底已在姑苏区老年大学西校区连续服务一年多，包括为模特班提供课程展示与户外采风的影像记录、组织学员集体生日会、为各类出行研学提供全程保障。</p>
+  -->
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec3">叁 · 核心业务能力 <span>CORE CAPABILITIES</span></h2>
+<p>支撑上述产品落地的，是五项已经跑通、可以复用的实际能力——这也是我们与常规旅行社、常规老年游最根本的区别所在。</p>
+
+<div class="cap">
+  <div class="hd"><span class="no">能 力 一</span><span class="nm">文史内容原创与考证能力</span></div>
+  <p>所有讲稿均为原创撰写，逐条查证史志与文献；对流传甚广的讹误（如地名混淆、年代错位、建筑数据失真）逐项勘误并形成内部口径，确保讲出去的每一句话都经得起追问。</p>
+  <span class="tag">《姑苏繁华图》46 打卡点古今对照（交互页已上线）</span>
+  <span class="tag">「连中三元」科举晋级课：童生到状元六级闯关 · 唱保制度</span>
+  <span class="tag">四塔守望图鉴：史沿／高度／塔刹逐塔核证</span>
+  <span class="tag">真珠舍利宝幢国宝课：造幢年代 · 四万余颗珍珠逐项考订</span>
+</div>
+
+<div class="cap">
+  <div class="hd"><span class="no">能 力 二</span><span class="nm">数字化产品开发能力</span></div>
+  <p>能把一次课程、一条线路沉淀为可反复使用的数字资产：交互式网页、图鉴系统、打卡进度、古今对照页面、课件三件套（网页课件＋引导 PPT＋逐字讲稿）。学员可以带回家继续看，机构也可以直接拿去用。</p>
+  <span class="tag">已交付 60+ 个交互页面与图鉴</span>
+  <span class="tag">课件三件套已成标准交付物</span>
+  <span class="tag">自有公众号 · 视频号传播渠道</span>
+</div>
+
+<div class="cap">
+  <div class="hd"><span class="no">能 力 三</span><span class="nm">线路策划与实地勘路能力</span></div>
+  <p>每条线路都经过实地踩点：步行总里程、路面状况、落座歇脚点、卫生间分布、长椅与茶歇、树荫与日晒、长者票务政策，逐项核过再定稿。线路按行走强度分级，腿脚一般的学员也能全程跟下来。</p>
+  <span class="tag">步行可控 · 强度分级</span>
+  <span class="tag">60–69 岁半价、70 岁以上免票政策逐线核实</span>
+  <span class="tag">六条线路均配齐手册 · 图库 · 打卡页</span>
+</div>
+
+<div class="cap">
+  <div class="hd"><span class="no">能 力 四</span><span class="nm">影像拍摄与内容传播能力</span></div>
+  <p>自带摄影摄像与短视频制作能力，活动现场即出素材；同时拥有成体系的短视频栏目与公众号矩阵，可为合作方的活动、课程、线路做持续曝光，把一次线下活动放大成一轮线上传播。</p>
+  <span class="tag">活动跟拍 · 短视频成片</span>
+  <span class="tag">8 万+ 粉丝传播渠道</span>
+  <span class="tag">公众号「吴地时光机」· 视频号「封子老师探苏州」</span>
+  <span class="tag">自创栏目：《古城大侦探》</span>
+  <span class="tag">自创栏目：《吴地名侦探》</span>
+  <span class="tag">自创栏目：《姑苏繁华图》逐段解读</span>
+</div>
+
+<div class="cap">
+  <div class="hd"><span class="no">能 力 五</span><span class="nm">长者服务与安全保障能力</span></div>
+  <p>五星级旅行社的资质与保险体系做底，加上一年多校园服务的实际经验，形成了一套针对老年学员的服务规范：行程节奏放慢、预留休息与如厕节点、餐饮软烂、随队药箱、紧急联系人机制。</p>
+  <span class="tag">五星社资质 · 责任险体系</span>
+  <span class="tag">校园服务经验一年多</span>
+  <span class="tag">社区公益课堂常态化</span>
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec4">肆 · 核心服务与产品体系 <span>SERVICES &amp; PRODUCTS</span></h2>
+
+<h3>一 · 核心服务清单</h3>
+<table>
+  <thead>
+    <tr><th style="width:16%">服务板块</th><th style="width:44%">具体内容</th><th>交付形态</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>系统课程</b></td>
+      <td>《吴地时光机》苏州趣味文史课程，15 讲（室内 10 ＋ 户外 5），每次 90 分钟，四单元递进：城与河 → 学与脉 → 商与街 → 古今苏州</td>
+      <td>现场授课＋户外走读＋课件三件套</td>
+    </tr>
+    <tr>
+      <td><b>市内走读</b></td>
+      <td>文庙线、胥江胥门线、阊门线（6 站）、北寺塔线（8 站）、山塘街线等 Citywalk 线路，半日至一日</td>
+      <td>行程手册＋打卡网页＋现场讲解</td>
+    </tr>
+    <tr>
+      <td><b>跨市一日研学</b></td>
+      <td>环姑苏五路寻史：昆山（歇马桥＋锦溪）、太仓（浏河＋南园弇山园）、无锡（惠山古镇）、常州（淹城＋青果巷）、湖州（南浔古镇）；另有常熟古里线（铁琴铜剑楼→红豆山庄→增福禅寺）</td>
+      <td>完整行程手册＋时间轴＋长者票务指引</td>
+    </tr>
+    <tr>
+      <td><b>讲座与公开课</b></td>
+      <td>单次室内文史专题讲座，可进社区、进机构、进养老社区，用于活动引流与前期破冰</td>
+      <td>讲座课件＋讲稿</td>
+    </tr>
+    <tr>
+      <td><b>影像记录</b></td>
+      <td>为各类活动提供全程拍照与视频拍摄，成片交付</td>
+      <td>照片包＋短视频成片</td>
+    </tr>
+    <tr>
+      <td><b>研学物料</b></td>
+      <td>每条线路配齐四件套：<b>打卡点解说手册 ＋ 名人篇教学大纲 ＋ 实拍图片资料库 ＋ 扫码打卡网页</b>；另可出海报、报名二维码卡片、社群宣传文案。学员端与讲师端物料分层，学员所见只有陈述性内容</td>
+      <td>可打印手册＋扫码网页＋图包</td>
+    </tr>
+    <tr>
+      <td><b>数字平台</b></td>
+      <td>自有公众号、视频号双端矩阵，可承载线路展示、内容连载与活动传播；也可为合作方开设专属栏目</td>
+      <td>公众号＋视频号</td>
+    </tr>
+    <tr>
+      <td><b>定制开发</b></td>
+      <td>按合作方需求定制课程主题、线路走向、活动形式与数字内容</td>
+      <td>一案一策</td>
+    </tr>
+  </tbody>
+</table>
+<p class="jumpwrap prodwrap"><a class="jump" href="#prod" data-target="prod" id="prodBtn" role="button" aria-expanded="false" aria-controls="prod" data-lb-open="详细产品展示" data-lb-close="收起详细产品展示"><span class="lb">详细产品展示</span><span class="ic">↓</span></a><span class="jumpnote">线上版可点击展开查看</span></p>
+
+<div class="fold prod" id="prod" hidden>
+<p class="starnote"><span class="star">★</span> 标记项为已具备完整成品、可在洽谈现场即时呈现或演示的产品——可当场扫码打开网页、大屏播放课件，或出示实物手册；未标记项为传播渠道或规划内容。</p>
+<h3>二 · 《吴地时光机》15 讲课程结构</h3>
+<table>
+  <thead>
+    <tr><th style="width:20%">单元</th><th style="width:12%" class="c">课次</th><th>篇目</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>第一单元<br>城与河</b></td><td class="c">1–5</td>
+      <td>① 伍子胥筑城——苏州 2500 年从何而来（室内）<br>② 《平江图》上的宋代苏州（室内）<br>③ <b>北寺塔 · 古城龙脉</b>（户外）<br>④ 城门与城墙——苏州八门的前世今生（室内）<br>⑤ 宝塔里的苏州（四塔巡礼＋真珠舍利宝幢）（室内）</td>
+    </tr>
+    <tr>
+      <td><b>第二单元<br>学与脉</b></td><td class="c">6–9</td>
+      <td>⑥ 范仲淹与府学——天下府学自苏始（室内）<br>⑦ <b>苏州文庙 · 文脉之旅（上）</b>（户外）<br>⑧ 苏州状元甲天下（室内）<br>⑨ <b>苏州大学 · 文脉之旅（下）</b>（户外）</td>
+    </tr>
+    <tr>
+      <td><b>第三单元<br>商与街</b></td><td class="c">10–13</td>
+      <td>⑩ 阊门——《红楼梦》开篇的富贵风流地（室内）<br>⑪ <b>阊门 · 水陆城门探秘</b>（户外）<br>⑫ 白居易与山塘河——一位刺史的城市遗产（室内）<br>⑬ <b>山塘街 · 不为人知的故事</b>（户外）</td>
+    </tr>
+    <tr>
+      <td><b>第四单元<br>古今苏州</b></td><td class="c">14–15</td>
+      <td>⑭ 从《姑苏繁华图》看明清苏州（室内）<br>⑮ 总结课：古城保护与古今对话（室内）</td>
+    </tr>
+  </tbody>
+</table>
+<p class="muted">每堂户外课均配套一个手机摄影实战主题：给宝塔「戴绿帽子」、红墙金叶构图、建筑对称构图、延时车流与古今同框、桥洞框景与倒影——学员边走、边学、边拍，课后都能拿出自己的作品。</p>
+
+<h3>三 · 已备妥的八类主题课件</h3>
+<table>
+  <thead>
+    <tr><th style="width:22%">主题</th><th>内容要点</th><th style="width:26%">交付形态</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b><span class="star">★</span> 真珠舍利宝幢 · 国宝课</b></td>
+      <td>北宋国宝的千年传奇——1013 年造幢、四万余颗珍珠、122.6 厘米通高，以「国宝三问」设悬念，已在社区为老服务中心开讲</td>
+      <td>大屏展示版课件＋视频素材＋公益课海报＋社群文案</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 科举文化专题</b></td>
+      <td>苏州状元甲天下、六级闯关与「唱保」制度、吴中四才子功名考、范仲淹与府学文脉</td>
+      <td>系列课件＋知识树网页</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 《平江图》详解</b></td>
+      <td>宋代苏州城图逐段精读：六十五座牌坊逐坊核对、水系与街巷格局、古今对位</td>
+      <td>15 讲交互网页课件＋坊表核对表</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 《姑苏繁华图》导读</b></td>
+      <td>清代长卷里的苏州市井烟火：46 个打卡点古今对照、长卷分段放大</td>
+      <td>长卷深缩放网页</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 苏州园林</b></td>
+      <td>造景手法与审美鉴赏，可作为进社区、进机构的标准课件</td>
+      <td>规范教案</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 春秋城墙</b></td>
+      <td>里制换算、四座春秋城池同比例尺对比、城墙厚度演变、攻防博弈互动</td>
+      <td>互动网页课件（含随堂测验）</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 古塔与山系图鉴</b></td>
+      <td>四塔巡礼、北寺塔寺史长卷、文庙文脉人物图谱、七子山山系图志</td>
+      <td>交互图鉴＋竖版图谱</td>
+    </tr>
+    <tr>
+      <td><b><span class="star">★</span> 城门故事</b></td>
+      <td>苏州古城门逐门成篇：形制演变、老照片与今景对照、历史事件考据</td>
+      <td>公众号图文系列＋视频号短片系列</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>四 · 产品成熟度一览</h3>
+<p>产品池按「成熟在用 / 开发中 / 规划中」三档推进，持续迭代，而不是零散接团。</p>
+<table>
+  <thead>
+    <tr><th style="width:15%">状态</th><th style="width:40%">产品</th><th>说明</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b style="color:#2F7D5B">✔ 成熟在用</b></td>
+      <td><span class="star">★</span> 系统课程 · 市内走读 · 跨市一日线 · 常熟古里线</td>
+      <td>15 讲课程已在姑苏区老年大学秋季班正式开课；六条市内走读线均配完整行程手册；跨市一日线与常熟古里线可成团出行</td>
+    </tr>
+    <tr>
+      <td><b style="color:#C9821E">◐ 开发中</b></td>
+      <td>《姑苏繁华图》46 打卡点专题走读 · 四塔图鉴专题课 · 七子山题材线路</td>
+      <td>交互网页与图鉴内容已完成，正在转化为可实际带队的走读线路</td>
+    </tr>
+    <tr>
+      <td><b>○ 规划中</b></td>
+      <td>长三角二日深度研学 · 全国历史文化名城与古都远程研学 · 世界范围异域风情文化游</td>
+      <td>在现有一日线基础上延伸过夜线路，将「走读苏州」方法论复制到更大范围——详见「柒 · 发展规划」</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>五 · 可现场演示的内容资产</h3>
+<p>以下为已完成、可现场扫码或点开查看的代表性成果（均为手机端友好页面），可按贵方感兴趣的方向挑选演示：</p>
+
+<h4>一 · 线路物料四件套（六条走读线路均已配齐）</h4>
+<table>
+  <thead>
+    <tr><th style="width:24%">线路</th><th>已备物料</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b><span class="star">★</span> 文庙 · 府学文脉线</b></td><td>打卡点解说手册（八站考据）＋ 名人篇教学大纲（九位人物）＋ 文脉人物图谱 ＋ 实拍图片资料库 ＋ 扫码打卡网页</td></tr>
+    <tr><td><b><span class="star">★</span> 胥江 · 胥门古城起源线</b></td><td>打卡点解说手册 ＋ 名人篇教学大纲 ＋ 伍子胥人物关系图 ＋ 实拍图片资料库 ＋ 三话题宣传页</td></tr>
+    <tr><td><b><span class="star">★</span> 阊门 · 水陆城门线</b></td><td>解说手册 ＋ 名人篇教学大纲 ＋ 亲子研学图志（家庭版）＋ 实拍图片资料库 ＋ 打卡网页</td></tr>
+    <tr><td><b><span class="star">★</span> 北寺塔 · 古城龙脉线</b></td><td>解说手册 ＋ 名人篇教学大纲 ＋ 寺史长卷图谱 ＋ 实拍图片资料库</td></tr>
+    <tr><td><b><span class="star">★</span> 山塘街线</b></td><td>解说手册 ＋ 名人篇教学大纲</td></tr>
+    <tr><td><b><span class="star">★</span> 狮子山 · 重阳登高线</b></td><td>九站解说手册 ＋ 山系图志 ＋ 长者版走读网页</td></tr>
+  </tbody>
+</table>
+
+<h4>二 · 专题课件 · 图鉴 · 教学交付</h4>
+<table>
+  <thead>
+    <tr><th style="width:32%">内容资产</th><th>说明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b><span class="star">★</span> 《真珠舍利宝幢》国宝专题</b></td><td>完整课件＋视频素材＋公益课海报＋社群宣传文案，可直接进社区开讲</td></tr>
+    <tr><td><b><span class="star">★</span> 科举文化系列</b></td><td>科举知识体系树状图＋六级闯关与「唱保」制度＋吴中四才子功名考＋《希文录》范仲淹</td></tr>
+    <tr><td><b><span class="star">★</span> 《平江图》图文对照详解</b></td><td>15 讲逐段精读，另附六十五座牌坊逐坊核对表</td></tr>
+    <tr><td><b><span class="star">★</span> 《姑苏繁华图》46 打卡点古今对照</b></td><td>古画分段 ↑ 今景找不同 ↑ 四章路线 ↑ 打卡墙</td></tr>
+    <tr><td><b><span class="star">★</span> 春秋城墙趣味知识探讨</b></td><td>里制换算器、四城同比例尺对比、城墙厚度演变、攻防翻卡、随堂测验</td></tr>
+    <tr><td><b><span class="star">★</span> 四塔守望 · 交互图鉴</b></td><td>画中四塔逐一图鉴：史沿／高度／塔刹／国保批次，配实测照片</td></tr>
+    <tr><td><b><span class="star">★</span> 七子山志 · 山系全景图鉴</b></td><td>山系概览、峰峦图鉴、勘误专题</td></tr>
+    <tr><td><b><span class="star">★</span> 《苏州园林》规范教案</b></td><td>标准教案格式，可直接用于机构教学</td></tr>
+    <tr><td><b><span class="star">★</span> 五站课程 · 微信分享版</b></td><td>文庙／北寺塔／阊门／山塘街／苏州大学五堂户外现场课，含老照片与今景对照</td></tr>
+    <tr><td><b><span class="star">★</span> 课件三件套样板</b></td><td>交互网页课件 ＋ 引导 PPT ＋ 逐字讲稿，可作教学标准样板</td></tr>
+  </tbody>
+</table>
+
+<h4>三 · 平台与传播矩阵（传播渠道，供了解）</h4>
+<table>
+  <thead>
+    <tr><th style="width:32%">内容资产</th><th>说明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>公众号「吴地时光机」</b></td><td>「城门故事」系列图文连载，逐门讲透苏州古城门，配老照片与今景对照</td></tr>
+    <tr><td><b>视频号「封子老师探苏州」</b></td><td>城门故事等系列短片，全网文旅短视频粉丝 8 万余</td></tr>
+  </tbody>
+</table>
+
+<p class="jumpwrap closewrap"><a class="jump close" href="#prod" data-target="prod" data-close="1" role="button" aria-expanded="true" aria-controls="prod" data-lb-open="详细产品展示" data-lb-close="收起详细产品展示"><span class="ic">↑</span><span class="lb">收起详细产品展示</span></a><span class="jumpnote">以上即本项详细展示内容</span></p>
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec5">伍 · 已落地活动实绩 <span>TRACK RECORD</span></h2>
+<p>以下是我们<b>已经实际交付过</b>的活动——不是方案构想，而是跑通过的形式，可原样复制到贵方的场景中。</p>
+
+<table>
+  <thead>
+    <tr><th style="width:17%">时间</th><th style="width:31%">活动</th><th>形式与说明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>2025.09 至今</b></td><td>姑苏区老年大学 ·《趣味苏州文史》系统课程</td><td>入驻校园常设授课，室内精讲与户外走读结合</td></tr>
+    <tr><td><b>2026.09</b></td><td>《真珠舍利宝幢》国宝公益课</td><td>吴门桥街道双桥综合为老服务中心，面向社区长者；课件、海报、社群文案全套自制</td></tr>
+    <tr><td><b>2026.09</b></td><td>胥江 · 胥门古城起源线走读</td><td>社区老年研学团实地走读，配现场图包与讲解手册</td></tr>
+    <tr><td><b>2026.10</b></td><td>国庆亲子研学双线（文庙线 ＋ 胥江胥门线）</td><td>面向亲子家庭的 Citywalk 研学，配双线图志网页与打卡任务</td></tr>
+    <tr><td><b>2026.10</b></td><td>耆骥研学 · 文庙府学线（长者版）</td><td>面向活力长者的单线走读，配专属网页、海报与长者报名口径</td></tr>
+    <tr><td><b>2026.10</b></td><td>重阳登高 · 狮子山长者研学（已排期）</td><td>与社区合办的重阳登高活动，低强度线路，含九站解说手册</td></tr>
+  </tbody>
+</table>
+
+<div class="box wash">
+  <h4>这些实绩说明什么</h4>
+  <ul>
+    <li>已跑通「<b>进老年大学、进社区、进为老服务中心</b>」三条落地路径，同时另有面向亲子家庭的产品线，客群可切换</li>
+    <li>每一场活动都不止「讲一次就散」，而是沉淀为手册、图库、网页与影像，<b>下一场可以做得更快、更好</b></li>
+    <li>社区公益课为收费研学线路做自然铺垫：<b>先让长者听到好内容，再转化为愿意出门走读的学员</b></li>
+  </ul>
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec6">陆 · 差异化优势 <span>WHY NOT ORDINARY TOUR</span></h2>
+<p>这是我们最想说明的一件事：<b>我们做的不是「老年旅游」，而是「老年文化研学」</b>。同样一个狮子山、同样一座阊门，交付给学员的东西完全不同。</p>
+
+<table class="vs">
+  <thead>
+    <tr><th>对比维度</th><th>常规老年旅游</th><th>吴地时光机的文化研学</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>内容来源</td><td>通用导游词、景点简介</td><td><b>原创考据讲稿，逐条核对史志，讹误逐项勘误</b></td></tr>
+    <tr><td>教学形式</td><td>车上听讲解、下车拍照</td><td><b>室内精讲打底 ＋ 现场走读验证，知识有前后呼应</b></td></tr>
+    <tr><td>现场道具</td><td>无</td><td><b>古画、古地图、老照片带到现场对照——像一场「城市考古」</b></td></tr>
+    <tr><td>学员收获</td><td>朋友圈一张合影</td><td><b>手机摄影作品 ＋ 交互网页 ＋ 图鉴，带得回家、拿得出手</b></td></tr>
+    <tr><td>行走强度</td><td>赶行程，走不动也得跟</td><td><b>步行可控、强度分级、沿途配茶歇与落座点</b></td></tr>
+    <tr><td>活动收尾</td><td>散团即结束</td><td><b>课后社群、成果展示、下一期邀约，形成持续参与</b></td></tr>
+    <tr><td>传播效应</td><td>基本没有</td><td><b>现场影像＋短视频＋公众号矩阵，一次活动放大成一轮传播</b></td></tr>
+  </tbody>
+</table>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec7">柒 · 发展规划 <span>THE ROAD AHEAD</span></h2>
+<p>「把文化旅游、趣味旅游真正落地」不是一句口号，而是我们已经在走的路径——<b>从家门口，到周边，再到大好河山，直至走向世界</b>，一步一步往外走，但内容和服务的标准只升不降。</p>
+
+<div class="steps">
+  <div class="step now">
+    <div class="ph">第 一 期 · 进行中</div>
+    <div class="nm">深耕姑苏</div>
+    <div class="tm">主场：苏州古城 · 家门口的文化养老</div>
+    <ul>
+      <li>15 讲系统课程持续开课、迭代</li>
+      <li>市内走读线路不断新增与打磨</li>
+      <li>校园与社区公益课堂常态化</li>
+      <li>数字内容资产持续沉淀</li>
+    </ul>
+  </div>
+  <div class="step">
+    <div class="ph">第 二 期 · 已启动</div>
+    <div class="nm">环姑苏周边游</div>
+    <div class="tm">长三角 · 一日往返为主，逐步延伸至二日</div>
+    <ul>
+      <li>五条跨市一日线已成型，继续加密</li>
+      <li>开发二日过夜深度线路</li>
+      <li>与在地文化机构、场馆建立内容合作</li>
+      <li>把「走读＋摄影＋数媒」模式整线复制</li>
+    </ul>
+  </div>
+  <div class="step">
+    <div class="ph">第 三 期 · 规划中</div>
+    <div class="nm">大好河山文化游</div>
+    <div class="tm">全国历史文化名城 · 古都 · 多日深度</div>
+    <ul>
+      <li>历史文化名城与古都远程研学</li>
+      <li>行前讲座 → 实地走读 → 行后成果三段式</li>
+      <li>文化深度＋旅行品质双高，拒绝走马观花</li>
+      <li>与康养旅居板块天然衔接</li>
+    </ul>
+  </div>
+  <div class="step">
+    <div class="ph">第 四 期 · 规划中</div>
+    <div class="nm">世界 · 异域风情文化游</div>
+    <div class="tm">世界范围的旅游目的地 · 异域文化深度体验</div>
+    <ul>
+      <li>承接面向世界范围的旅行活动，为有意愿、有余力的长者开辟异域风情文化游</li>
+      <li>以当地历史、宗教、建筑与生活方式为主线，配行前文化讲座与在地讲解</li>
+      <li>延续「走读 + 摄影 + 数媒」模式，让出远门也能看得懂、讲得出</li>
+      <li>出境团队由五星级旅行社按标准配齐领队、保险与应急保障</li>
+      <li>线路产品与接待体系均已成熟，接入研学内容即可启动</li>
+    </ul>
+  </div>
+</div>
+
+
+<p class="jumpwrap routewrap"><a class="jump blue" href="#routes" data-target="routes" id="routeBtn" role="button" aria-expanded="false" aria-controls="routes" data-lb-open="详细的成熟线路展示" data-lb-close="收起详细线路展示"><span class="lb">详细的成熟线路展示</span><span class="ic">↓</span></a><span class="jumpnote">线上版可点击展开查看</span></p>
+<div class="fold route" id="routes" hidden>
+<h3>附 · 成熟线路详情（均已实地核定）</h3>
+<table>
+  <thead>
+    <tr><th style="width:22%">线路</th><th style="width:11%" class="c">时长</th><th>核心看点</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>文庙线</b>（深度）</td><td class="c">半日</td><td>宋代四大宋碑（重点《平江图》）→ 楠木大成殿 → 四大古银杏 → 范仲淹府学</td></tr>
+    <tr><td><b>胥江胥门线</b>（古城起源）</td><td class="c">半日</td><td>胥江与胥门——苏州古城的水源与城门源头，伍子胥故事的实地落点</td></tr>
+    <tr><td><b>阊门线</b>（Citywalk 6 站）</td><td class="c">半日</td><td>阊门水陆城门 → 山塘街起点，古今对照的繁华地脉</td></tr>
+    <tr><td><b>北寺塔线</b>（Citywalk 8 站）</td><td class="c">半日</td><td>古城龙脉中轴，塔、寺、街巷串成一条线</td></tr>
+    <tr><td><b>山塘街线</b></td><td class="c">半日</td><td>通贵桥、白居易与山塘河，桥洞框景与倒影</td></tr>
+    <tr><td><b>狮子山线</b>（重阳登高）</td><td class="c">半日</td><td>九站低强度登高：吴王僚、白居易、申时行的山中旧事，俯瞰古城西线</td></tr>
+    <tr><td><b>环姑苏·东线 昆山</b></td><td class="c">一日</td><td>歇马桥古村 + 锦溪——宋韵双桥、水冢与古砖瓦博物馆</td></tr>
+    <tr><td><b>环姑苏·东南线 太仓</b></td><td class="c">一日</td><td>浏河古镇 + 南园弇山园——江海雄风、郑和开洋之地</td></tr>
+    <tr><td><b>环姑苏·西线 无锡</b></td><td class="c">一日</td><td>惠山古镇——百余祠堂群与天下第二泉</td></tr>
+    <tr><td><b>环姑苏·西南线 常州</b></td><td class="c">一日</td><td>淹城遗址 + 青果巷——春秋城池与名士第一巷</td></tr>
+    <tr><td><b>环姑苏·南线 湖州</b></td><td class="c">一日</td><td>南浔古镇——丝商与藏书，湖丝世博夺金</td></tr>
+    <tr><td><b>常熟古里线</b></td><td class="c">一日</td><td>铁琴铜剑楼 → 红豆山庄（钱谦益与柳如是）→ 增福禅寺</td></tr>
+  </tbody>
+</table>
+<p class="muted">以上线路均已实地核过：步行总里程、路面状况、落座歇脚点、卫生间位置、长者免票与半价政策。行程手册可直接打印分发，打卡网页可扫码使用。</p>
+
+<p class="jumpwrap closewrap"><a class="jump close blue" href="#routes" data-target="routes" data-close="1" role="button" aria-expanded="true" aria-controls="routes" data-lb-open="详细的成熟线路展示" data-lb-close="收起详细线路展示"><span class="ic">↑</span><span class="lb">收起详细线路展示</span></a><span class="jumpnote">以上即本项详细展示内容</span></p>
+</div>
+
+<div class="box wash">
+  <h4>我们坚持的三条底线</h4>
+  <ul>
+    <li><b>内容不注水</b>——讲出去的每一条史实都要有出处，宁少讲、不讲错</li>
+    <li><b>强度不硬撑</b>——宁可少走一个点，也不让学员在路边等、在太阳下熬</li>
+    <li><b>品质不将就</b>——区别于常规老年团的「低价走量」，我们做的是小班、精细、有获得感的文化体验</li>
+  </ul>
+</div>
+
+<div class="sep">✦ ✦ ✦</div>
+
+<h2 id="sec8">捌 · 可为合作方提供的支持 <span>WHAT WE CAN OFFER</span></h2>
+<div class="coop">
+  <p class="coop-lede">结合我们现有的资源与能力，可向贵方提供的合作方向如下——具体形式与深度，均可按贵方的实际需要商定。</p>
+  <div class="coop-grid">
+    <div class="cc" style="--c1:#B8252A;--c2:#8E2A22">
+      <div class="cc-hd"><span class="cc-no">01</span><span class="cc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 4.4c2.5-1 5.2-1 7.4.6v14.2c-2.2-1.6-4.9-1.6-7.4-.6z"/><path d="M21.4 4.4c-2.5-1-5.2-1-7.4.6v14.2c2.2-1.6 4.9-1.6 7.4-.6z"/><path d="M12 5v14.2"/></svg></span></div>
+      <div class="en">CURRICULUM</div>
+      <h4>课程内容供应</h4>
+      <p>将《吴地时光机》成熟课程模块（含课件、讲稿、户外走读方案）直接植入贵方老年教育或康养社区的教学体系，我方负责内容与主讲</p>
+    </div>
+    <div class="cc" style="--c1:#C9A45C;--c2:#A8813B">
+      <div class="cc-hd"><span class="cc-no">02</span><span class="cc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1.8 6 8.2 3.4 15.8 6l6.4-2.6v14.2L15.8 20.2 8.2 17.6 1.8 20.2z"/><path d="M8.2 3.4v14.2M15.8 6v14.2"/></svg></span></div>
+      <div class="en">ROUTE CO-DESIGN</div>
+      <h4>线路共建</h4>
+      <p>围绕贵方所在区域的文化资源，共同策划定制研学线路，我方承担内容考据、线路勘定与行程手册编制</p>
+    </div>
+    <div class="cc" style="--c1:#2F7D5B;--c2:#1F5C40">
+      <div class="cc-hd"><span class="cc-no">03</span><span class="cc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 13.6l2.2 2.2L15.4 11"/></svg></span></div>
+      <div class="en">FULL EXECUTION</div>
+      <h4>研学活动落地</h4>
+      <p>承接贵方组织的老年研学活动的全流程执行：策划、讲解、交通、后勤、影像、成果输出</p>
+    </div>
+    <div class="cc" style="--c1:#0F62C8;--c2:#0A4690">
+      <div class="cc-hd"><span class="cc-no">04</span><span class="cc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.6 12 4l8 6.6V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9.6 21v-5.6h4.8V21"/></svg></span></div>
+      <div class="en">CULTURAL CONTENT</div>
+      <h4>旅居内容配套</h4>
+      <p>为贵方旅居项目提供目的地文化解读与在地走读内容，解决「旅居过程中看什么、听什么」的问题</p>
+    </div>
+    <div class="cc" style="--c1:#B25A2B;--c2:#8E4018">
+      <div class="cc-hd"><span class="cc-no">05</span><span class="cc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.4"/><path d="M2.6 12h18.8"/><path d="M12 2.6c2.7 2.4 4.2 5.8 4.2 9.4s-1.5 7-4.2 9.4c-2.7-2.4-4.2-5.8-4.2-9.4S9.3 5 12 2.6z"/></svg></span></div>
+      <div class="en">DIGITAL &amp; MEDIA</div>
+      <h4>数字内容与传播</h4>
+      <p>为合作活动开发交互网页、图鉴、打卡系统，并通过我方内容矩阵进行传播曝光</p>
+    </div>
+    <div class="cc" style="--c1:#7E4E9B;--c2:#5B3172">
+      <div class="cc-hd"><span class="cc-no">06</span><span class="cc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.4 12 5l9 4.4-9 4.4z"/><path d="M7 11.6v4.2c0 1.3 2.2 2.4 5 2.4s5-1.1 5-2.4v-4.2"/><path d="M20.4 10v5"/></svg></span></div>
+      <div class="en">TRAINING</div>
+      <h4>师资与培训</h4>
+      <p>为贵方团队提供文史讲解方法培训，或联合举办专题讲座与公开课</p>
+    </div>
+  </div>
+  <div class="coop-foot">
+    <span class="k">合作方式</span>
+    <p>不设固定模式：可以只做一门课，也可以整体打包；建议先从一个班或一条线路试跑，做出看得见的成效，再逐步加深、延伸到长期共建。</p>
+  </div>
+</div>
+<footer>
+  <p><b>团队名称：</b>吴地时光机趣味文史文旅研学团队</p>
+  <p><b>组成单位：</b>苏州和平国际旅行社（苏州市两家五星级旅行社之一）· 吴地时光机文史工作室</p>
+  <p><b>常驻教学点：</b>姑苏区老年大学西校区（2025 年 9 月起）</p>
+  <p><b>线上矩阵：</b>公众号「吴地时光机」· 视频号「封子老师探苏州」</p>
+  <div class="sign">
+    <div>吴地时光机趣味文史文旅研学团队</div>
+    <div>2026 年 10 月</div>
+  </div>
+</footer>
+
+</div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('nav.toc a'));
+  var bar=document.querySelector('nav.toc .bar');
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+  function sync(){
+    var y=window.scrollY+90, cur=0;
+    for(var k=0;k<secs.length;k++){ if(secs[k]&&secs[k].offsetTop<=y) cur=k; }
+    if(window.scrollY<120) cur=0;
+    links.forEach(function(a,k){ a.classList.toggle('on',k===cur); });
+    var el=links[cur];
+    if(el&&bar){ try{
+      var left=el.getBoundingClientRect().left-bar.getBoundingClientRect().left+bar.scrollLeft;
+      bar.scrollTo({left:left-bar.clientWidth/2+el.offsetWidth/2,behavior:'smooth'});
+    }catch(e){} }
+  }
+  var t=null;
+  window.addEventListener('scroll',function(){ if(t)return; t=setTimeout(function(){t=null;sync();},120); },{passive:true});
+  sync();
+})();
+</script>
+<script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('a.jump[data-target]'));
+  var groups={};
+  btns.forEach(function(b){
+    var id=b.getAttribute('data-target');
+    if(!groups[id]) groups[id]=[];
+    groups[id].push(b);
+  });
+  Object.keys(groups).forEach(function(id){
+    var fold=document.getElementById(id);
+    if(!fold) return;
+    var group=groups[id], topBtn=group[0];
+    function setLabel(open){
+      group.forEach(function(b){
+        var lb=b.querySelector('.lb');
+        var lo=b.getAttribute('data-lb-open'), lc=b.getAttribute('data-lb-close');
+        if(lb&&lo&&lc) lb.textContent = open ? lc : lo;
+        b.setAttribute('aria-expanded', open?'true':'false');
+        b.classList.toggle('open', open);
+      });
+    }
+    setLabel(false);
+    group.forEach(function(b){
+      b.addEventListener('click',function(e){
+        e.preventDefault();
+        var y=topBtn.getBoundingClientRect().top+window.scrollY-110;
+        var willOpen=fold.hasAttribute('hidden');
+        if(willOpen){ fold.removeAttribute('hidden'); } else { fold.setAttribute('hidden',''); }
+        setLabel(willOpen);
+        try{ window.scrollTo({top:y,behavior:'smooth'}); }catch(err){}
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
