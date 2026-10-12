@@ -321,6 +321,37 @@ h2{scroll-margin-top:64px}
   .coop-grid{grid-template-columns:1fr}
 }
 
+/* ===== 移动端（≤760px）：宽表转卡片，避免窄屏文字被挤成竖条 ===== */
+@media screen and (max-width:760px){
+  table{border:none;background:transparent;border-radius:0;margin:12px 0 4px;font-size:13.5px}
+  table thead{display:none}
+  table tbody{display:block}
+  table tbody tr{display:block;background:var(--card);border:1px solid var(--line);
+    border-radius:11px;padding:13px 14px 12px;margin:0 0 10px;
+    box-shadow:0 1px 5px rgba(140,100,40,.06)}
+  table tbody tr:nth-child(even){background:var(--card)}
+  table td{display:block;border:none;padding:0;margin:0;line-height:1.76;
+    word-break:break-word;overflow-wrap:anywhere}
+  table td.c{text-align:left}
+  /* 首列作卡片标题 */
+  table tbody td:first-child{font-size:15px;font-weight:bold;color:var(--red2);
+    line-height:1.5;margin-bottom:5px}
+  table:not(.tb-routes) tbody td[data-label]:not(:first-child)::before{content:attr(data-label) ' · ';
+    color:var(--muted);font-size:12.5px;letter-spacing:.4px}
+  /* 对比表第 3 列淡化底色；首列复原宽度 */
+  .vs tbody td:nth-child(1){width:auto}
+  .vs tbody td:nth-child(3){background:transparent}
+  /* 成熟线路表：时长 + 阶段做成徽章并排，核心看点满宽另起 */
+  .tb-routes tbody td:nth-child(2){display:inline-block;margin:0 8px 4px 0;font-size:12.5px;
+    background:#F6EDDA;color:#6B4B1E;padding:1px 10px;border-radius:9px;font-weight:bold}
+  .tb-routes tbody td:nth-child(3){display:inline-block;margin:0 8px 4px 0;font-size:12.5px}
+  .tb-routes tbody td:nth-child(4){display:block;margin-top:2px;padding-top:9px;
+    border-top:1px dashed #EADFC8;color:var(--ink2);font-size:13.5px}
+  .tb-routes tbody td:nth-child(4)::before{content:'核心看点 · ';
+    color:var(--muted);font-size:12.5px;letter-spacing:.4px}
+  .tb-routes .lv{font-size:11.5px;padding:1px 8px}
+}
+
 @media print{
   body{background:#fff}
   .wrap{padding:0 6px 20px}
@@ -570,12 +601,12 @@ h2{scroll-margin-top:64px}
     <tr><th style="width:17%">时间</th><th style="width:31%">项目</th><th>形式与说明</th></tr>
   </thead>
   <tbody>
-    <tr><td><b>2010–2020</b></td><td>上海世博会票务代理（苏州区域）</td><td>作为苏州代理之一组织输送游客数十万人次，社会效益与经济效益兼得</td></tr>
-    <tr><td><b>2010–2020</b></td><td>苏州华谊影城渠道合作</td><td>开业当年即在各渠道中送客量居前，合作延续至今，每年持续输送客源</td></tr>
-    <tr><td><b>2020–2022</b></td><td>「再青春」细分市场品牌</td><td>依托全国前列 B2B 平台从零开拓细分市场业务板块，形成稳定口碑</td></tr>
-    <tr><td><b>2023–2025</b></td><td>江苏水韵数字旅游卡</td><td>省级一卡通项目，模式复制推广至全国多个省份，为多省相关业务提供支持</td></tr>
-    <tr><td><b>2025 至今</b></td><td>木渎景区与木渎酒店运营</td><td>线下渠道与线上平台同步运营，已纳入当前团队业务</td></tr>
-    <tr><td><b>景区合作</b></td><td>苏州红豆山庄水世界 · 樱野景区 · 甪呦呦成长社区</td><td>覆盖三类景区实操：红豆山庄开业当年暑期合作，自投资金与人员打造水上项目，为景区同步打响品牌；樱野樱花季全案托管（抖音服务商托管运营、营销活动、线上线下票务、营地运营、落地接待）；甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
+    <tr><td data-label="时间"><b>2010–2020</b></td><td data-label="项目">上海世博会票务代理（苏州区域）</td><td data-label="形式与说明">作为苏州代理之一组织输送游客数十万人次，社会效益与经济效益兼得</td></tr>
+    <tr><td data-label="时间"><b>2010–2020</b></td><td data-label="项目">苏州华谊影城渠道合作</td><td data-label="形式与说明">开业当年即在各渠道中送客量居前，合作延续至今，每年持续输送客源</td></tr>
+    <tr><td data-label="时间"><b>2020–2022</b></td><td data-label="项目">「再青春」细分市场品牌</td><td data-label="形式与说明">依托全国前列 B2B 平台从零开拓细分市场业务板块，形成稳定口碑</td></tr>
+    <tr><td data-label="时间"><b>2023–2025</b></td><td data-label="项目">江苏水韵数字旅游卡</td><td data-label="形式与说明">省级一卡通项目，模式复制推广至全国多个省份，为多省相关业务提供支持</td></tr>
+    <tr><td data-label="时间"><b>2025 至今</b></td><td data-label="项目">木渎景区与木渎酒店运营</td><td data-label="形式与说明">线下渠道与线上平台同步运营，已纳入当前团队业务</td></tr>
+    <tr><td data-label="时间"><b>景区合作</b></td><td data-label="项目">苏州红豆山庄水世界 · 樱野景区 · 甪呦呦成长社区</td><td data-label="形式与说明">覆盖三类景区实操：红豆山庄开业当年暑期合作，自投资金与人员打造水上项目，为景区同步打响品牌；樱野樱花季全案托管（抖音服务商托管运营、营销活动、线上线下票务、营地运营、落地接待）；甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
   </tbody>
 </table>
 
@@ -595,12 +626,12 @@ h2{scroll-margin-top:64px}
     <tr><th style="width:17%">时间</th><th style="width:31%">活动</th><th>形式与说明</th></tr>
   </thead>
   <tbody>
-    <tr><td><b>2025.09 至今</b></td><td>姑苏区老年大学 ·《趣味苏州文史》系统课程</td><td>入驻校园常设授课，室内精讲与户外走读结合</td></tr>
-    <tr><td><b>2026.09</b></td><td>《真珠舍利宝幢》国宝公益课</td><td>吴门桥街道双桥综合为老服务中心，面向社区长者；课件、海报、社群文案全套自制</td></tr>
-    <tr><td><b>2026.09</b></td><td>胥江 · 胥门古城起源线走读</td><td>社区老年研学团实地走读，配现场图包与讲解手册</td></tr>
-    <tr><td><b>2026.10</b></td><td>国庆亲子研学双线（文庙线 ＋ 胥江胥门线）</td><td>面向亲子家庭的 Citywalk 研学，配双线图志网页与打卡任务</td></tr>
-    <tr><td><b>2026.10</b></td><td>耆骥研学 · 文庙府学线（长者版）</td><td>面向活力长者的单线走读，配专属网页、海报与长者报名口径</td></tr>
-    <tr><td><b>2026.10</b></td><td>重阳登高 · 狮子山长者研学（已排期）</td><td>与社区合办的重阳登高活动，低强度线路，含九站解说手册</td></tr>
+    <tr><td data-label="时间"><b>2025.09 至今</b></td><td data-label="活动">姑苏区老年大学 ·《趣味苏州文史》系统课程</td><td data-label="形式与说明">入驻校园常设授课，室内精讲与户外走读结合</td></tr>
+    <tr><td data-label="时间"><b>2026.09</b></td><td data-label="活动">《真珠舍利宝幢》国宝公益课</td><td data-label="形式与说明">吴门桥街道双桥综合为老服务中心，面向社区长者；课件、海报、社群文案全套自制</td></tr>
+    <tr><td data-label="时间"><b>2026.09</b></td><td data-label="活动">胥江 · 胥门古城起源线走读</td><td data-label="形式与说明">社区老年研学团实地走读，配现场图包与讲解手册</td></tr>
+    <tr><td data-label="时间"><b>2026.10</b></td><td data-label="活动">国庆亲子研学双线（文庙线 ＋ 胥江胥门线）</td><td data-label="形式与说明">面向亲子家庭的 Citywalk 研学，配双线图志网页与打卡任务</td></tr>
+    <tr><td data-label="时间"><b>2026.10</b></td><td data-label="活动">耆骥研学 · 文庙府学线（长者版）</td><td data-label="形式与说明">面向活力长者的单线走读，配专属网页、海报与长者报名口径</td></tr>
+    <tr><td data-label="时间"><b>2026.10</b></td><td data-label="活动">重阳登高 · 狮子山长者研学（已排期）</td><td data-label="形式与说明">与社区合办的重阳登高活动，低强度线路，含九站解说手册</td></tr>
   </tbody>
 </table>
 
@@ -622,13 +653,13 @@ h2{scroll-margin-top:64px}
     <tr><th>对比维度</th><th>常规老年旅游</th><th>吴地时光机的文化研学</th></tr>
   </thead>
   <tbody>
-    <tr><td>内容来源</td><td>通用导游词、景点简介</td><td><b>原创考据讲稿，逐条核对史志，讹误逐项勘误</b></td></tr>
-    <tr><td>教学形式</td><td>车上听讲解、下车拍照</td><td><b>室内精讲打底 ＋ 现场走读验证，知识有前后呼应</b></td></tr>
-    <tr><td>现场道具</td><td>无</td><td><b>古画、古地图、老照片带到现场对照——像一场「城市考古」</b></td></tr>
-    <tr><td>学员收获</td><td>朋友圈一张合影</td><td><b>手机摄影作品 ＋ 交互网页 ＋ 图鉴，带得回家、拿得出手</b></td></tr>
-    <tr><td>行走强度</td><td>赶行程，走不动也得跟</td><td><b>步行可控、强度分级、沿途配茶歇与落座点</b></td></tr>
-    <tr><td>活动收尾</td><td>散团即结束</td><td><b>课后社群、成果展示、下一期邀约，形成持续参与</b></td></tr>
-    <tr><td>传播效应</td><td>基本没有</td><td><b>现场影像＋短视频＋公众号矩阵，一次活动放大成一轮传播</b></td></tr>
+    <tr><td data-label="对比维度">内容来源</td><td data-label="常规老年旅游">通用导游词、景点简介</td><td data-label="吴地时光机的文化研学"><b>原创考据讲稿，逐条核对史志，讹误逐项勘误</b></td></tr>
+    <tr><td data-label="对比维度">教学形式</td><td data-label="常规老年旅游">车上听讲解、下车拍照</td><td data-label="吴地时光机的文化研学"><b>室内精讲打底 ＋ 现场走读验证，知识有前后呼应</b></td></tr>
+    <tr><td data-label="对比维度">现场道具</td><td data-label="常规老年旅游">无</td><td data-label="吴地时光机的文化研学"><b>古画、古地图、老照片带到现场对照——像一场「城市考古」</b></td></tr>
+    <tr><td data-label="对比维度">学员收获</td><td data-label="常规老年旅游">朋友圈一张合影</td><td data-label="吴地时光机的文化研学"><b>手机摄影作品 ＋ 交互网页 ＋ 图鉴，带得回家、拿得出手</b></td></tr>
+    <tr><td data-label="对比维度">行走强度</td><td data-label="常规老年旅游">赶行程，走不动也得跟</td><td data-label="吴地时光机的文化研学"><b>步行可控、强度分级、沿途配茶歇与落座点</b></td></tr>
+    <tr><td data-label="对比维度">活动收尾</td><td data-label="常规老年旅游">散团即结束</td><td data-label="吴地时光机的文化研学"><b>课后社群、成果展示、下一期邀约，形成持续参与</b></td></tr>
+    <tr><td data-label="对比维度">传播效应</td><td data-label="常规老年旅游">基本没有</td><td data-label="吴地时光机的文化研学"><b>现场影像＋短视频＋公众号矩阵，一次活动放大成一轮传播</b></td></tr>
   </tbody>
 </table>
 
@@ -689,26 +720,26 @@ h2{scroll-margin-top:64px}
 <p class="jumpwrap routewrap"><a class="jump blue" href="#routes" data-target="routes" id="routeBtn" role="button" aria-expanded="false" aria-controls="routes" data-lb-open="详细的成熟线路展示" data-lb-close="收起详细线路展示"><span class="lb">详细的成熟线路展示</span><span class="ic">↓</span></a><span class="jumpnote">线上版可点击展开查看</span></p>
 <div class="fold route" id="routes" hidden>
 <h3>附 · 成熟线路详情（均已实地核定）</h3>
-<table>
+<table class="tb-routes">
   <thead>
     <tr><th style="width:19%">线路</th><th style="width:9%" class="c">时长</th><th style="width:17%" class="c">对应发展规划</th><th>核心看点</th></tr>
   </thead>
   <tbody>
-    <tr><td><b>文庙线</b>（深度）</td><td class="c">半日</td><td class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td>宋代四大宋碑（重点《平江图》）→ 楠木大成殿 → 四大古银杏 → 范仲淹府学</td></tr>
-    <tr><td><b>胥江胥门线</b>（古城起源）</td><td class="c">半日</td><td class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td>胥江与胥门——苏州古城的水源与城门源头，伍子胥故事的实地落点</td></tr>
-    <tr><td><b>阊门线</b>（Citywalk 6 站）</td><td class="c">半日</td><td class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td>阊门水陆城门 → 山塘街起点，古今对照的繁华地脉</td></tr>
-    <tr><td><b>北寺塔线</b>（Citywalk 8 站）</td><td class="c">半日</td><td class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td>古城龙脉中轴，塔、寺、街巷串成一条线</td></tr>
-    <tr><td><b>山塘街线</b></td><td class="c">半日</td><td class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td>通贵桥、白居易与山塘河，桥洞框景与倒影</td></tr>
-    <tr><td><b>狮子山线</b>（重阳登高）</td><td class="c">半日</td><td class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td>九站低强度登高：吴王僚、白居易、申时行的山中旧事，俯瞰古城西线</td></tr>
-    <tr><td><b>环姑苏·东线 昆山</b></td><td class="c">一日</td><td class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td>歇马桥古村 + 锦溪——宋韵双桥、水冢与古砖瓦博物馆</td></tr>
-    <tr><td><b>环姑苏·东南线 太仓</b></td><td class="c">一日</td><td class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td>浏河古镇 + 南园弇山园——江海雄风、郑和开洋之地</td></tr>
-    <tr><td><b>环姑苏·西线 无锡</b></td><td class="c">一日</td><td class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td>惠山古镇——百余祠堂群与天下第二泉</td></tr>
-    <tr><td><b>环姑苏·西南线 常州</b></td><td class="c">一日</td><td class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td>淹城遗址 + 青果巷——春秋城池与名士第一巷</td></tr>
-    <tr><td><b>环姑苏·南线 湖州</b></td><td class="c">一日</td><td class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td>南浔古镇——丝商与藏书，湖丝世博夺金</td></tr>
-    <tr><td><b>常熟古里线</b></td><td class="c">一日</td><td class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td>铁琴铜剑楼 → 红豆山庄（钱谦益与柳如是）→ 增福禅寺</td></tr>
-    <tr><td><b>文脉溯源 · 中原寻根线</b>（方案储备）</td><td class="c">7 天 6 晚</td><td class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td>徐州 · 郑州 · 洛阳 · 开封——泰伯奔吴、礼乐南传，从吴地北上寻根</td></tr>
-    <tr><td><b>衣冠南渡 · 山海遗韵线</b>（方案储备）</td><td class="c">8 天 7 晚</td><td class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td>龙岩 · 泉州 · 潮州——客家、闽南、潮汕保存的中原古礼与山海风物</td></tr>
-<tr><td><b>长江三峡 · 文化风情研学游</b>（方案储备）</td><td class="c">6 天 5 晚</td><td class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td>重庆 · 奉节 · 巫山 · 宜昌——游轮三日过峡：白帝城托孤、夔门诗路、巫山神女，兼看巴楚峡江风情</td></tr>
+    <tr><td data-label="线路"><b>文庙线</b>（深度）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">宋代四大宋碑（重点《平江图》）→ 楠木大成殿 → 四大古银杏 → 范仲淹府学</td></tr>
+    <tr><td data-label="线路"><b>胥江胥门线</b>（古城起源）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">胥江与胥门——苏州古城的水源与城门源头，伍子胥故事的实地落点</td></tr>
+    <tr><td data-label="线路"><b>阊门线</b>（Citywalk 6 站）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">阊门水陆城门 → 山塘街起点，古今对照的繁华地脉</td></tr>
+    <tr><td data-label="线路"><b>北寺塔线</b>（Citywalk 8 站）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">古城龙脉中轴，塔、寺、街巷串成一条线</td></tr>
+    <tr><td data-label="线路"><b>山塘街线</b></td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">通贵桥、白居易与山塘河，桥洞框景与倒影</td></tr>
+    <tr><td data-label="线路"><b>狮子山线</b>（重阳登高）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">九站低强度登高：吴王僚、白居易、申时行的山中旧事，俯瞰古城西线</td></tr>
+    <tr><td data-label="线路"><b>环姑苏·东线 昆山</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">歇马桥古村 + 锦溪——宋韵双桥、水冢与古砖瓦博物馆</td></tr>
+    <tr><td data-label="线路"><b>环姑苏·东南线 太仓</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">浏河古镇 + 南园弇山园——江海雄风、郑和开洋之地</td></tr>
+    <tr><td data-label="线路"><b>环姑苏·西线 无锡</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">惠山古镇——百余祠堂群与天下第二泉</td></tr>
+    <tr><td data-label="线路"><b>环姑苏·西南线 常州</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">淹城遗址 + 青果巷——春秋城池与名士第一巷</td></tr>
+    <tr><td data-label="线路"><b>环姑苏·南线 湖州</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">南浔古镇——丝商与藏书，湖丝世博夺金</td></tr>
+    <tr><td data-label="线路"><b>常熟古里线</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">铁琴铜剑楼 → 红豆山庄（钱谦益与柳如是）→ 增福禅寺</td></tr>
+    <tr><td data-label="线路"><b>文脉溯源 · 中原寻根线</b>（方案储备）</td><td data-label="时长" class="c">7 天 6 晚</td><td data-label="对应发展规划" class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td data-label="核心看点">徐州 · 郑州 · 洛阳 · 开封——泰伯奔吴、礼乐南传，从吴地北上寻根</td></tr>
+    <tr><td data-label="线路"><b>衣冠南渡 · 山海遗韵线</b>（方案储备）</td><td data-label="时长" class="c">8 天 7 晚</td><td data-label="对应发展规划" class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td data-label="核心看点">龙岩 · 泉州 · 潮州——客家、闽南、潮汕保存的中原古礼与山海风物</td></tr>
+<tr><td data-label="线路"><b>长江三峡 · 文化风情研学游</b>（方案储备）</td><td data-label="时长" class="c">6 天 5 晚</td><td data-label="对应发展规划" class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td data-label="核心看点">重庆 · 奉节 · 巫山 · 宜昌——游轮三日过峡：白帝城托孤、夔门诗路、巫山神女，兼看巴楚峡江风情</td></tr>
   </tbody>
 </table>
 <p class="muted">以上线路均已实地核过：步行总里程、路面状况、落座歇脚点、卫生间位置、长者免票与半价政策。行程手册可直接打印分发，打卡网页可扫码使用。表末三条跨省线路（华夏文脉双线、长江三峡）为方案储备，行程与落点尚需实地勘路、成本核定后再行开放。</p>
