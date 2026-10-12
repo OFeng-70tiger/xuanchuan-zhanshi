@@ -172,6 +172,13 @@ footer b{color:var(--ink2)}
 .sign{margin-top:26px;text-align:right;font-size:14px;color:var(--ink2);line-height:2}
 .sign .big{font-size:16px;color:var(--red2);font-weight:bold}
 
+/* 结语 */
+.closing{margin:4px 0 24px;padding:2px 0 2px 18px;border-left:3px solid var(--red2);page-break-inside:avoid}
+.closing .cl-t{font-size:12.5px;letter-spacing:5px;color:var(--gold2);font-weight:bold;margin-bottom:9px}
+.closing p{margin:0;font-size:14px;color:var(--ink2);line-height:2.05}
+.closing .cl-key{margin-top:9px;color:var(--ink);font-size:14.5px}
+.closing .cl-zh{margin-top:11px;font-size:13px;color:var(--muted);letter-spacing:2.5px}
+
 @media screen and (max-width:760px){
   .g5,.g4,.g3,.g2,.engine,.steps,.people,.roles{grid-template-columns:1fr 1fr}
   .g5{grid-template-columns:repeat(2,1fr)}
@@ -420,6 +427,11 @@ h2{scroll-margin-top:64px}
   /* 页脚收紧，避免落款孤行拖出一页 */
   footer{margin-top:26px;padding-top:14px}
   .sign{margin-top:14px;page-break-inside:avoid}
+  .closing{margin:2px 0 14px;padding-left:14px;border-left-width:2.5px}
+  .closing .cl-t{letter-spacing:4px;margin-bottom:6px}
+  .closing p{font-size:12.5px;line-height:1.9}
+  .closing .cl-key{font-size:13px;margin-top:6px}
+  .closing .cl-zh{margin-top:8px;font-size:12px}
 }
 </style>
 </head>
@@ -606,7 +618,7 @@ h2{scroll-margin-top:64px}
     <tr><td data-label="时间"><b>2020–2022</b></td><td data-label="项目">「再青春」细分市场品牌</td><td data-label="形式与说明">依托全国前列 B2B 平台从零开拓细分市场业务板块，形成稳定口碑</td></tr>
     <tr><td data-label="时间"><b>2023–2025</b></td><td data-label="项目">江苏水韵数字旅游卡</td><td data-label="形式与说明">省级一卡通项目，模式复制推广至全国多个省份，为多省相关业务提供支持</td></tr>
     <tr><td data-label="时间"><b>2025 至今</b></td><td data-label="项目">木渎景区与木渎酒店运营</td><td data-label="形式与说明">线下渠道与线上平台同步运营，已纳入当前团队业务</td></tr>
-    <tr><td data-label="时间"><b>景区合作</b></td><td data-label="项目">苏州红豆山庄水世界 · 樱野景区 · 甪呦呦成长社区</td><td data-label="形式与说明">覆盖三类景区实操：红豆山庄开业当年暑期合作，自投资金与人员打造水上项目，为景区同步打响品牌；樱野樱花季全案托管（抖音服务商托管运营、营销活动、线上线下票务、营地运营、落地接待）；甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
+    <tr><td data-label="时间"><b>景区合作</b></td><td data-label="项目">苏州红豆山庄 · 甪呦呦成长社区</td><td data-label="形式与说明">覆盖两类景区实操：红豆山庄开业当年暑期合作，自投资金与人员打造水上项目；甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
   </tbody>
 </table>
 
@@ -726,11 +738,8 @@ h2{scroll-margin-top:64px}
   </thead>
   <tbody>
     <tr><td data-label="线路"><b>文庙线</b>（深度）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">宋代四大宋碑（重点《平江图》）→ 楠木大成殿 → 四大古银杏 → 范仲淹府学</td></tr>
-    <tr><td data-label="线路"><b>胥江胥门线</b>（古城起源）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">胥江与胥门——苏州古城的水源与城门源头，伍子胥故事的实地落点</td></tr>
     <tr><td data-label="线路"><b>阊门线</b>（Citywalk 6 站）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">阊门水陆城门 → 山塘街起点，古今对照的繁华地脉</td></tr>
     <tr><td data-label="线路"><b>北寺塔线</b>（Citywalk 8 站）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">古城龙脉中轴，塔、寺、街巷串成一条线</td></tr>
-    <tr><td data-label="线路"><b>山塘街线</b></td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">通贵桥、白居易与山塘河，桥洞框景与倒影</td></tr>
-    <tr><td data-label="线路"><b>狮子山线</b>（重阳登高）</td><td data-label="时长" class="c">半日</td><td data-label="对应发展规划" class="c"><span class="lv lv1">一期 · 深耕姑苏</span></td><td data-label="核心看点">九站低强度登高：吴王僚、白居易、申时行的山中旧事，俯瞰古城西线</td></tr>
     <tr><td data-label="线路"><b>环姑苏·东线 昆山</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">歇马桥古村 + 锦溪——宋韵双桥、水冢与古砖瓦博物馆</td></tr>
     <tr><td data-label="线路"><b>环姑苏·东南线 太仓</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">浏河古镇 + 南园弇山园——江海雄风、郑和开洋之地</td></tr>
     <tr><td data-label="线路"><b>环姑苏·西线 无锡</b></td><td data-label="时长" class="c">一日</td><td data-label="对应发展规划" class="c"><span class="lv lv2">二期 · 环姑苏周边游</span></td><td data-label="核心看点">惠山古镇——百余祠堂群与天下第二泉</td></tr>
@@ -742,7 +751,7 @@ h2{scroll-margin-top:64px}
 <tr><td data-label="线路"><b>长江三峡 · 文化风情研学游</b>（方案储备）</td><td data-label="时长" class="c">6 天 5 晚</td><td data-label="对应发展规划" class="c"><span class="lv lv3">三期 · 大好河山文化游</span></td><td data-label="核心看点">重庆 · 奉节 · 巫山 · 宜昌——游轮三日过峡：白帝城托孤、夔门诗路、巫山神女，兼看巴楚峡江风情</td></tr>
   </tbody>
 </table>
-<p class="muted">以上线路均已实地核过：步行总里程、路面状况、落座歇脚点、卫生间位置、长者免票与半价政策。行程手册可直接打印分发，打卡网页可扫码使用。表末三条跨省线路（华夏文脉双线、长江三峡）为方案储备，行程与落点尚需实地勘路、成本核定后再行开放。</p>
+<p class="muted">以上线路均已实地核过：步行总里程、路面状况、落座歇脚点、卫生间位置、长者免票与半价政策。行程手册可直接打印分发，打卡网页可扫码使用。</p>
 
 <p class="jumpwrap closewrap"><a class="jump close blue" href="#routes" data-target="routes" data-close="1" role="button" aria-expanded="true" aria-controls="routes" data-lb-open="详细的成熟线路展示" data-lb-close="收起详细线路展示"><span class="ic">↑</span><span class="lb">收起详细线路展示</span></a><span class="jumpnote">以上即本项详细展示内容</span></p>
 </div>
@@ -805,12 +814,15 @@ h2{scroll-margin-top:64px}
   </div>
 </div>
 <footer>
-  <p><b>团队名称：</b>吴地时光机趣味文史文旅研学团队</p>
-  <p><b>组成单位：</b>苏州和平国际旅行社（苏州市两家五星级旅行社之一）· 吴地时光机文史工作室</p>
-  <p><b>常驻教学点：</b>姑苏区老年大学西校区（2025 年 9 月起）</p>
-  <p><b>线上矩阵：</b>公众号「吴地时光机」· 视频号「封子老师探苏州」</p>
-  <div class="sign">
-    <div>吴地时光机趣味文史文旅研学团队</div>
+      <div class="closing">
+    <div class="cl-t">结 语</div>
+    <p>文旅市场几经起伏，竞争已入深水。我们这支深耕二十余年的团队，凭的是对旅行的热忱与理解、对细节的执拗——愿以专业拓宽旅行的边界，为更多人留存值得珍藏的记忆。</p>
+    <p class="cl-key">让旅行超越期待，让专业诠释热爱。期待与贵司同行，共赴下一程山海。</p>
+    <div class="cl-zh">顺颂商祺</div>
+  </div>
+    <p><b>组成单位：</b>苏州和平国际旅行社（苏州市两家五星级旅行社之一）· 吴地时光机文史工作室</p>
+      <div class="sign">
+    <div>康养乐龄游 · 文旅研学</div>
     <div>2026 年 10 月</div>
   </div>
 </footer>
