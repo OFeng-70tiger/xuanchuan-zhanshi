@@ -79,6 +79,17 @@ a{color:var(--blue);text-decoration:none;word-break:break-all}
   text-shadow:0 0 9px rgba(246,208,124,.55),0 0 22px rgba(246,208,124,.28)}
 .stat .n small{font-size:16px;font-weight:normal;color:#E5BE72;text-shadow:0 0 7px rgba(246,208,124,.4)}
 .stat .t{font-size:12.5px;color:#EBD5A6;margin-top:7px;letter-spacing:.5px}
+/* 五项数据 · 五色（宋韵文物色系：靛青 / 朱砂 / 松墨 / 古铜 / 紫檀；手机蜂巢与桌面横排同一套） */
+.g5 .stat{box-shadow:0 3px 11px rgba(42,30,24,.26), inset 0 1px 0 rgba(255,228,176,.2);
+  border-color:rgba(216,188,128,.42)}
+.g5 .stat:nth-child(1){background:linear-gradient(160deg,#2B4472,#1B2C4E 58%,#101A31)}
+.g5 .stat:nth-child(2){background:linear-gradient(160deg,#8E2A22,#5E1822 58%,#3C0E17)}
+.g5 .stat:nth-child(3){background:linear-gradient(160deg,#2C5B4B,#1D4136 58%,#112A23)}
+.g5 .stat:nth-child(4){background:linear-gradient(160deg,#8A6630,#63451D 58%,#432E12)}
+.g5 .stat:nth-child(5){background:linear-gradient(160deg,#573460,#3B2244 58%,#25152C)}
+.g5 .stat .n{color:#F4DCA6;text-shadow:0 0 9px rgba(246,208,124,.42),0 0 22px rgba(246,208,124,.2)}
+.g5 .stat .n small{color:#E9C685;text-shadow:0 0 7px rgba(246,208,124,.3)}
+.g5 .stat .t{color:#EEDCB2}
 
 /* 卡片盒 */
 .box{background:var(--card);border:1px solid var(--line);border-radius:10px;
@@ -181,9 +192,29 @@ footer b{color:var(--ink2)}
 .closing .cl-zh{margin-top:11px;font-size:13px;color:var(--muted);letter-spacing:2.5px}
 
 @media screen and (max-width:760px){
-  .g5,.g4,.g3,.g2,.engine,.steps,.people,.roles{grid-template-columns:1fr 1fr}
-  .g5{grid-template-columns:repeat(2,1fr)}
+  .g4,.g3,.g2,.people,.roles{grid-template-columns:1fr 1fr}
   header h1{font-size:27px}
+  /* 发展规划四期：手机端改为从上到下 4 行，避免两列把卡片挤成瘦长条 */
+  .steps{grid-template-columns:1fr;gap:12px}
+  .step{padding:16px 18px}
+  .step .nm{margin:8px 0 5px}
+  /* 团队构成·双引擎：手机端改上下排列，不再并排挤成瘦长条 */
+  .engine{grid-template-columns:1fr;gap:12px}
+  /* 五项数据：手机端改蜂巢六边形（上 3 下 2 错位咬合，类五环布局） */
+  .g5{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:14px 0 4px}
+  .g5 .stat{width:100%;aspect-ratio:1/1.1547;border:none;border-radius:0;padding:0 9px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+    -webkit-clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+    transform:scale(.955)}
+  .g5 .stat:nth-child(1){grid-column:1/3}
+  .g5 .stat:nth-child(2){grid-column:3/5}
+  .g5 .stat:nth-child(3){grid-column:5/7}
+  .g5 .stat:nth-child(4){grid-column:2/4;margin-top:-32.5%}
+  .g5 .stat:nth-child(5){grid-column:4/6;margin-top:-32.5%}
+  .g5 .stat .n{font-size:26px}
+  .g5 .stat .n small{font-size:13px}
+  .g5 .stat .t{font-size:10.5px;margin-top:3px;line-height:1.3;letter-spacing:0}
 }
 /* 置顶导航 */
 html{scroll-behavior:smooth}
