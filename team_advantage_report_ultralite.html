@@ -84,6 +84,7 @@ a{color:var(--blue);text-decoration:none;word-break:break-all}
 .box{background:var(--card);border:1px solid var(--line);border-radius:10px;
   padding:18px 22px;margin:14px 0}
 .box.wash{background:var(--wash)}
+.blksum{margin:14px 0 2px;padding:10px 16px;border-left:3px solid var(--red);background:var(--wash);border-radius:0 8px 8px 0;font-size:14.5px;line-height:1.85;color:var(--ink2)}
 .box.gold{border-color:var(--gold);background:linear-gradient(135deg,#FFFBF2,#FDF6E8)}
 .box h4{margin-top:0}
 .box ul{margin:6px 0 0}
@@ -426,7 +427,10 @@ h2{scroll-margin-top:64px}
   .grid{margin:8px 0}
   /* 页脚收紧，避免落款孤行拖出一页 */
   footer{margin-top:26px;padding-top:14px}
-  .sign{margin-top:14px;page-break-inside:avoid}
+  .sign{margin-top:14px;page-break-inside:avoid;page-break-before:avoid}
+  .blksum{page-break-inside:avoid;margin:10px 0 2px;font-size:12.5px}
+  .apx p.muted{page-break-before:avoid}
+  footer p{page-break-before:avoid}
   .closing{margin:2px 0 14px;padding-left:14px;border-left-width:2.5px}
   .closing .cl-t{letter-spacing:4px;margin-bottom:6px}
   .closing p{font-size:12.5px;line-height:1.9}
@@ -464,7 +468,7 @@ h2{scroll-margin-top:64px}
 <div class="verdict">
   <div class="hd">关 于 我 们</div>
   <p class="big">我们是一支「<span style="color:#8E2A22">五星级旅行社的专业执行能力</span> ＋ <span style="color:#8E2A22">文史讲师的原创内容能力</span>」合体的老年文化研学团队——既能把队伍安全、舒服地带出去，也能让每一处地标都讲得出真东西、看得出门道。</p>
-  <p>现有 <b>15 讲系统课程</b>、<b>六条市内走读线路</b>（文庙/胥江胥门/阊门/北寺塔/山塘街/狮子山）、<b>六条跨市一日线</b>、<b>八类主题课件</b>，以及<b>公众号 · 视频号双端自媒体矩阵</b>，下一步将向长三角周边游、全国历史文化名城深度研学延伸。同时依托五星级旅行社的完整资质与成熟接待体系，常规大型旅行社所能承接的各类业务均可正常开展——从国内周边短线、跨省长线，直至世界性的旅行活动，均能与趣味文史研学活动深度结合、高品质交付，这正是我们与众不同的地方。</p>
+  <p>现有 <b>15 讲系统课程</b>、<b>六条市内走读线路</b>（文庙/胥江胥门/阊门/北寺塔/山塘街/狮子山）、<b>六条跨市一日线</b>、<b>八类主题课件</b>，以及<b>公众号 · 视频号双端自媒体矩阵</b>，下一步将向长三角周边游、全国历史文化名城深度研学延伸。同时依托五星级旅行社的完整资质与成熟接待体系，可承接常规大型旅行社的各类业务——从国内周边短线、跨省长线，直至世界性的旅行活动，均能与趣味文史研学活动深度结合、高品质交付，这正是我们与众不同的地方。</p>
 </div>
 
 <div class="sep">✦ ✦ ✦</div>
@@ -613,12 +617,12 @@ h2{scroll-margin-top:64px}
     <tr><th style="width:17%">时间</th><th style="width:31%">项目</th><th>形式与说明</th></tr>
   </thead>
   <tbody>
-    <tr><td data-label="时间"><b>2010–2020</b></td><td data-label="项目">上海世博会票务代理（苏州区域）</td><td data-label="形式与说明">作为苏州代理之一组织输送游客数十万人次，社会效益与经济效益兼得</td></tr>
-    <tr><td data-label="时间"><b>2010–2020</b></td><td data-label="项目">苏州华谊影城渠道合作</td><td data-label="形式与说明">开业当年即在各渠道中送客量居前，合作延续至今，每年持续输送客源</td></tr>
-    <tr><td data-label="时间"><b>2020–2022</b></td><td data-label="项目">「再青春」细分市场品牌</td><td data-label="形式与说明">依托全国前列 B2B 平台从零开拓细分市场业务板块，形成稳定口碑</td></tr>
-    <tr><td data-label="时间"><b>2023–2025</b></td><td data-label="项目">江苏水韵数字旅游卡</td><td data-label="形式与说明">省级一卡通项目，模式复制推广至全国多个省份，为多省相关业务提供支持</td></tr>
-    <tr><td data-label="时间"><b>2025 至今</b></td><td data-label="项目">木渎景区与木渎酒店运营</td><td data-label="形式与说明">线下渠道与线上平台同步运营，已纳入当前团队业务</td></tr>
-    <tr><td data-label="时间"><b>景区合作</b></td><td data-label="项目">苏州红豆山庄 · 甪呦呦成长社区</td><td data-label="形式与说明">覆盖两类景区实操：红豆山庄开业当年暑期合作，自投资金与人员打造水上项目；甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
+    <tr><td data-label="时间"><b>2010–2020</b></td><td data-label="项目">上海世博会票务代理（苏州区域）</td><td data-label="形式与说明">作为苏州代理之一组织输送游客<b>数十万人次</b>，社会效益与经济效益兼得</td></tr>
+    <tr><td data-label="时间"><b>2018–至今</b></td><td data-label="项目">苏州华谊兄弟电影世界（现阳澄半岛乐园）渠道合作</td><td data-label="形式与说明">开业当年即在各渠道中送客量居前，合作延续至今，每年持续输送客源 <b>5 万余人次</b></td></tr>
+    <tr><td data-label="时间"><b>2020–2022</b></td><td data-label="项目">「再青春」细分市场品牌</td><td data-label="形式与说明">依托全国前列 B2B 平台从零开拓细分市场业务板块，形成稳定口碑，短短两年即积累会员 <b>1 万余名</b>、活动 <b>100 余场</b></td></tr>
+    <tr><td data-label="时间"><b>2023–2025</b></td><td data-label="项目">江苏水韵数字旅游卡</td><td data-label="形式与说明">省级一卡通项目，模式复制推广至全国多个省份，为多省相关业务提供支持；目前每年仍在持续售卡，年售 <b>1000 余张</b></td></tr>
+    <tr><td data-label="时间"><b>2025 至今</b></td><td data-label="项目">苏州太湖文化旅游开发（集团）有限公司</td><td data-label="形式与说明">线下渠道运营营销，2025 年 <b>1.5 万人次</b>，2026 年至今已超 <b>2 万人次</b></td></tr>
+    <tr><td data-label="时间"><b>景区合作</b></td><td data-label="项目">苏州红豆山庄 · 甪呦呦成长社区等</td><td data-label="形式与说明">覆盖两类景区实操：1、红豆山庄开业当年暑期合作，自投入资金与人员打造水上项目，完成人数 <b>2 万余</b>；2、红豆山庄至今每年输送学生客群 <b>5 万余人次</b>；3、甪呦呦综合性景区作为全案运营团队多维度运营，定制策划节庆活动，为目的地达成流量与变现</td></tr>
   </tbody>
 </table>
 
@@ -637,13 +641,10 @@ h2{scroll-margin-top:64px}
   <thead>
     <tr><th style="width:17%">时间</th><th style="width:31%">活动</th><th>形式与说明</th></tr>
   </thead>
-  <tbody>
-    <tr><td data-label="时间"><b>2025.09 至今</b></td><td data-label="活动">姑苏区老年大学 ·《趣味苏州文史》系统课程</td><td data-label="形式与说明">入驻校园常设授课，室内精讲与户外走读结合</td></tr>
-    <tr><td data-label="时间"><b>2026.09</b></td><td data-label="活动">《真珠舍利宝幢》国宝公益课</td><td data-label="形式与说明">吴门桥街道双桥综合为老服务中心，面向社区长者；课件、海报、社群文案全套自制</td></tr>
-    <tr><td data-label="时间"><b>2026.09</b></td><td data-label="活动">胥江 · 胥门古城起源线走读</td><td data-label="形式与说明">社区老年研学团实地走读，配现场图包与讲解手册</td></tr>
+    <tbody>
+    <tr><td data-label="时间"><b>2026 年 3 月起至今</b></td><td data-label="活动">姑苏区老年大学 ·《趣味苏州文史》系统课程</td><td data-label="形式与说明">入驻校园常设授课，室内精讲与户外走读结合。<b>自 4 月开始至 6 月期间</b>，共开设公益课程 <b>9 次</b>，为超过 <b>300 名</b>老年人提供苏州趣味文史公益课堂服务，深受好评；9 月起，校区开设常态化苏州趣味文史公益课程「吴地时光机」</td></tr>
+    <tr><td data-label="时间"><b>2026.09 起至今</b></td><td data-label="活动">老年研学系列公益课程</td><td data-label="形式与说明"><b>40 余天内举办 4 项共 6 次</b>：<br>① 《真珠舍利宝幢》国宝公益课（<b>3 次</b>）—— 吴门桥街道双桥综合为老服务中心 · 双桥、梅巷社区<br>② 胥江 · 胥门古城起源线走读 —— 双桥社区<br>③ 耆骥研学 · 文庙府学线 —— 双桥社区<br>④ 重阳登高 · 狮子山长者研学（已排期）—— 与双桥、滚绣坊、竹辉、梅巷四社区合办<br>课程迅速打响知名度：由一个社区试点起步，<b>一个半月内已有 4 家</b>社区积极筹划设点，开设同类公益课堂</td></tr>
     <tr><td data-label="时间"><b>2026.10</b></td><td data-label="活动">国庆亲子研学双线（文庙线 ＋ 胥江胥门线）</td><td data-label="形式与说明">面向亲子家庭的 Citywalk 研学，配双线图志网页与打卡任务</td></tr>
-    <tr><td data-label="时间"><b>2026.10</b></td><td data-label="活动">耆骥研学 · 文庙府学线（长者版）</td><td data-label="形式与说明">面向活力长者的单线走读，配专属网页、海报与长者报名口径</td></tr>
-    <tr><td data-label="时间"><b>2026.10</b></td><td data-label="活动">重阳登高 · 狮子山长者研学（已排期）</td><td data-label="形式与说明">与社区合办的重阳登高活动，低强度线路，含九站解说手册</td></tr>
   </tbody>
 </table>
 
@@ -654,6 +655,7 @@ h2{scroll-margin-top:64px}
     <li>社区公益课为收费研学线路做自然铺垫：<b>先让长者听到好内容，再转化为愿意出门走读的学员</b></li>
   </ul>
 </div>
+<p class="blksum"><b>小结：</b>在不长的时间内，项目迅速扩大影响力、完成早期客群积累，为后续课程与线路的持续开展打下了坚实的粉丝基础。</p>
 
 <div class="sep">✦ ✦ ✦</div>
 
@@ -682,7 +684,7 @@ h2{scroll-margin-top:64px}
 
 <div class="steps">
   <div class="step now">
-    <div class="ph">第 一 期 · 进行中</div>
+    <div class="ph" style="background:#B8252A">第 一 期</div>
     <div class="nm">深耕姑苏</div>
     <div class="tm">主场：苏州古城 · 家门口的文化养老</div>
     <ul>
@@ -693,7 +695,7 @@ h2{scroll-margin-top:64px}
     </ul>
   </div>
   <div class="step">
-    <div class="ph">第 二 期 · 已启动</div>
+    <div class="ph" style="background:#A8813B">第 二 期</div>
     <div class="nm">环姑苏周边游</div>
     <div class="tm">长三角 · 一日往返为主，逐步延伸至二日</div>
     <ul>
@@ -704,7 +706,7 @@ h2{scroll-margin-top:64px}
     </ul>
   </div>
   <div class="step">
-    <div class="ph">第 三 期 · 进行中</div>
+    <div class="ph" style="background:#3E6B4E">第 三 期</div>
     <div class="nm">大好河山文化游</div>
     <div class="tm">全国历史文化名城 · 古都 · 多日深度</div>
     <ul>
@@ -715,7 +717,7 @@ h2{scroll-margin-top:64px}
     </ul>
   </div>
   <div class="step">
-    <div class="ph">第 四 期 · 进行中</div>
+    <div class="ph" style="background:#6E4E7E">第 四 期</div>
     <div class="nm">世界 · 异域风情文化游</div>
     <div class="tm">世界范围的旅游目的地 · 异域文化深度体验</div>
     <ul>
